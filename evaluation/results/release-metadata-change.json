@@ -1,0 +1,8 @@
+{
+  "file": "SKILL.md",
+  "generation_snapshot_sha256": "b91ae477a4b66dc90793640cf7e1915642c0914fbaf94c2ad520d484f7278e9d",
+  "release_sha256": "f01ad4737f40061a58af489d19f8995bb72f3ecd50b99b28528f01285915e08d",
+  "change": "Moved runtime compatibility description from optional compatibility frontmatter field into metadata.runtime; added version metadata. Bundled validator rejects compatibility although current open specification permits it. No body/style instructions or frozen profiles changed.",
+  "heldout_tuning": false,
+  "additional_change": "See post-pilot-revision.json for the later behavioral 0.1.1 amendment. The guided pilot reflects the original 0.1.0 instructions."
+}

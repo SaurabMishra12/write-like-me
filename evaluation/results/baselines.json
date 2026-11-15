@@ -1,0 +1,46 @@
+{
+  "generator": {
+    "kind": "live_model_generation",
+    "model": "inherited Codex model; exact backend identifier unavailable",
+    "settings": "host defaults; no sampling-control access",
+    "B_prompt": "Task request: {request}\nFacts: {facts}\nOriginal text, when supplied: {original}",
+    "C_prompt": "Polish this writing to sound more natural and human while preserving its meaning."
+  },
+  "outputs": [
+    {
+      "task_id": "syn-email",
+      "condition_B": "Dear Professor,\n\nI am a student working on a toy graph-search project. I read the abstract of your work on search algorithms and would appreciate the opportunity to discuss my project briefly. Would you be available for a short discussion?\n\nThank you for your time.\n\nBest regards,\n[Your name]",
+      "condition_C": "Dear Professor,\n\nI am a student working on a toy graph-search project. After reading the abstract of your work on search algorithms, I wanted to ask whether you would be open to a short discussion about my project.\n\nThank you for your time.\n\nBest regards,\n[Your name]"
+    },
+    {
+      "task_id": "syn-academic",
+      "condition_B": "In this constructed toy experiment, method A used 12 messages compared with 20 for method B, while both achieved 80% accuracy on 50 examples \\cite{fixture2026}. The observation is a lower message count for A at the same measured accuracy; it does not establish an accuracy improvement.",
+      "condition_C": "In this constructed toy experiment, method A used 12 messages and method B used 20. Both achieved 80% accuracy on 50 examples \\cite{fixture2026}. A therefore used fewer messages at the same measured accuracy in this example, but these results do not establish an accuracy improvement."
+    },
+    {
+      "task_id": "syn-blog",
+      "condition_B": "A moving average smooths incoming values by combining the previous state with the latest input. Here, each update retains 80% of the previous state and adds 20% of the new input.\n\nFor example, if the previous state is 10 and the new input is 20, the update is 0.8 × 10 + 0.2 × 20 = 12.\n\nThe recurrence is $s_t = 0.8s_{t-1} + 0.2x_t$. This is a numerical illustration, not a measured experiment.",
+      "condition_C": "Think of the state as a running value that changes gradually as new inputs arrive. It keeps 80% of its previous value and takes 20% of the new input.\n\nStarting from 10 with a new input of 20 gives 0.8 × 10 + 0.2 × 20 = 12.\n\nThe update rule is $s_t = 0.8s_{t-1} + 0.2x_t$. This illustrates the calculation; it is not a measured experiment."
+    },
+    {
+      "task_id": "syn-speaking",
+      "condition_B": "The left bar, Baseline, shows 60% accuracy. The right bar, Variant, also shows 60%. The bars are equal in height, so this example shows equal measured accuracy. It does not show an accuracy gain or establish a causal effect.",
+      "condition_C": "On the left, Baseline is at 60%. On the right, Variant is also at 60%. The bars are the same height, showing equal measured accuracy in this example. The figure shows no gain and does not establish a causal effect."
+    },
+    {
+      "task_id": "syn-technical",
+      "condition_B": "Usage: `python solve.py --seed 7 --limit 50`\n\nReads a local file and writes a JSON summary. An empty input returns an error.",
+      "condition_C": "Use `python solve.py --seed 7 --limit 50` to read a local file and write a JSON summary. Empty input returns an error."
+    },
+    {
+      "task_id": "syn-linkedin",
+      "condition_B": "I helped test a prototype in this constructed scenario. The test revealed a parsing error, and the team corrected it. A further test is planned.",
+      "condition_C": "In this constructed scenario, I helped test a prototype and we found a parsing error. The team corrected it and plans to test again."
+    },
+    {
+      "task_id": "syn-informal",
+      "condition_B": "Please explain this part once more.",
+      "condition_C": "Please explain this part once more."
+    }
+  ]
+}

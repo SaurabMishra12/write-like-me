@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-15",
+  "pytest": {
+    "tests": "97",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "1.754"
+  },
+  "skill_validator": "Skill is valid!",
+  "local_markdown_links": "all checked targets exist",
+  "public_json": "all parse",
+  "profiles_unchanged_from_pre_generation_freeze": true,
+  "review_history": "Independent synthetic four-defect review: reproduced and fixed; final suite adds source-status and .gitignore regressions.",
+  "forward_test": "2 fresh prompts, same-context model generation and review; one lexical false-positive veto and local revision retained. Not independent validation.",
+  "negative_evidence_retained": true,
+  "platform_runtime_tests": "unexecuted",
+  "human_voice_reviews": 0
+}

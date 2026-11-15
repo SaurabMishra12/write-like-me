@@ -1,0 +1,14 @@
+{
+  "notice": "Constructed toy fixture; both passages are newly generated model outputs. Neither is personal/human ground truth or a real experimental result. This is the original pilot output, not revised after rating.",
+  "task_id": "syn-academic",
+  "before_condition": "B ordinary AI draft",
+  "after_condition": "D skill-guided independent draft from the same fact ledger; not a literal edit of B",
+  "before": "In this constructed toy experiment, method A used 12 messages compared with 20 for method B, while both achieved 80% accuracy on 50 examples \\cite{fixture2026}. The observation is a lower message count for A at the same measured accuracy; it does not establish an accuracy improvement.",
+  "after": "In this constructed test, method A uses 12 messages and method B uses 20 messages, while both achieve 80% accuracy on 50 examples \\cite{fixture2026}. Method A therefore uses fewer messages in this example, but these results do not establish an accuracy improvement.",
+  "evidence_sources": [
+    "evaluation/test-cases/tasks.json",
+    "evaluation/results/baselines.json",
+    "evaluation/results/guided.json"
+  ],
+  "interpretation": "Both retain supplied values and the no-accuracy-improvement boundary. No superiority or human-voice conclusion follows."
+}

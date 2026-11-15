@@ -1,0 +1,688 @@
+{
+  "schema_version": 1,
+  "condition": "D",
+  "generated_at_utc": "2026-11-14T20:02:55.094201+00:00",
+  "task_source": "evaluation/test-cases/tasks.json",
+  "privacy": "public constructed fixtures; not human authorship or research evidence",
+  "protocol": "Forward skill-guided drafting with actual labeled review passes in one model context; no eight isolated editorial agents were run. No B/C outputs, raw personal corpus or prior evaluation results were consulted.",
+  "review_mode": "single_model_labeled_review_passes",
+  "generator_provenance": {
+    "model": "inherited Codex model; exact backend identifier unavailable",
+    "settings": "host defaults; no sampling-control access"
+  },
+  "profile_and_instruction_sha256": {
+    "SKILL.md": "b91ae477a4b66dc90793640cf7e1915642c0914fbaf94c2ad520d484f7278e9d",
+    "agents/protocol.md": "04f10f5e47f2646c0ee4ee9767112f44b97d6b137184d788fc5ce66dcea08024",
+    "profiles/academic-profile.yaml": "15de6aa3ee45630702d7f8e8d273464568cb83c597ea10f40e2593ab8367ede5",
+    "profiles/blog-speaker-profile.yaml": "f3bd3d02862d9dc25a89744ee61fc3b4589470e0d3fcc02d2a6a6d3d4ade6bb3",
+    "profiles/email-profile.yaml": "53a2a5ff42b5b07dbc4d8abafb43ae50fe5b8176512e63cf907bf6d38794d094",
+    "profiles/general-profile.yaml": "0fd4822a8b3da6e3ca3d5f799cb43f56d9e1e42d8168def73cf018fdbd57f9f5",
+    "profiles/pre2018-canon-profile.yaml": "da3f2e2943dd84c2651ab123fceb387b9bfd35a848a74af242921554516e7333",
+    "profiles/voice-profile.yaml": "66d538e8a724bd6c124cc87a647020e96c475b33e5997b15ac98ca50c6e3c36b",
+    "workflows/academic-paper.md": "a83764118bf140d14932ace2dcc36d36358eb7248c6c63ee354250fd47c86dcb",
+    "workflows/general-writing.md": "6390d007f7a2b3f3c545a9dc501436ba853eacc0e4031d95fce2d1c08b0b6c0d",
+    "workflows/professor-email.md": "7c0e172aa94b5a5c69804b8092b099818b9ef26d38c3c6a4e22edd0eb142f7fa",
+    "workflows/research-blog.md": "f74c39c2e3608525b2dd1d50700f36b84a9aad886a750ae884995eeaf5f454c9",
+    "workflows/speaking-script.md": "fd4333be55c4d2c9d55cb3c7834f18fdead3959f82a5f12328705962b6858aec",
+    "workflows/technical-writing.md": "e9bbc674b8f7fcde8d7281539d8d749e4ad1f51560e593c6d75da6c0790f93d2"
+  },
+  "limitations": [
+    "The same model drafted and reviewed the candidates; labeled roles do not establish reviewer independence.",
+    "Surface diagnostics do not establish semantic equivalence, grammar, truth, voice authenticity or efficacy.",
+    "No formal-quality or voice scores and no B/C comparisons were produced.",
+    "Graph generation 2026-11-14T19:41:03Z had these files not_tracked; direct file reads supplied task and skill evidence. No graph-completeness claim is made."
+  ],
+  "outputs": [
+    {
+      "task_id": "syn-email",
+      "condition_D": "Subject: Short discussion about a graph-search project\n\nDear Professor,\n\nI am a student working on a toy graph-search project. I have read the abstract of your work on search algorithms. Would a short discussion about my project be possible?\n\nRegards,\n[Your name]",
+      "review_mode": "single_model_labeled_review_passes",
+      "actual_review_roles": [
+        "audience-analyst",
+        "voice-analyst",
+        "authenticity-reviewer",
+        "structural-editor",
+        "language-editor",
+        "factual-guardian",
+        "final-auditor"
+      ],
+      "review_role_scope": {
+        "audience-analyst": "Intent pass: reader, purpose, register and requested action.",
+        "voice-analyst": "Comparison pass: consulted only the shared and task-relevant profiles; no personal-voice authenticity claim.",
+        "authenticity-reviewer": "Thinking pass: reconstructed the supplied claim and fact ledger; did not research or add experiences.",
+        "structural-editor": "Reconstruction pass: inspected paragraph or sentence function and made only the recorded changes.",
+        "language-editor": "Reconstruction pass: inspected clarity, grammar and register without deliberate errors or dialect invention.",
+        "factual-guardian": "Verification pass: compared the output with the task source, including associations, qualifiers, negation and causal status.",
+        "final-auditor": "Reviewed the one candidate and actual local-tool reports; reported unresolved issues rather than claiming automatic semantic certification."
+      },
+      "stage_ledger": {
+        "intention": "A concise, respectful draft for a professor; ask for a short project discussion.",
+        "thinking": {
+          "argument": "The supplied overlap is a student toy graph-search project and the professor's search-algorithm work. Reading extends only to the abstract.",
+          "immutable_claims": [
+            "student",
+            "toy graph-search project",
+            "professor studies search algorithms",
+            "abstract read only",
+            "request for short project discussion"
+          ]
+        },
+        "comparison": "Applied directness and audience-appropriate craft under the route profile. Sparse informal personal evidence does not validate finished prose as the user's formal voice.",
+        "reconstruction": "Drafted reason for contact, supported background and one ask; retained an unfilled sender-name field and used no flattery.",
+        "verification": "Compared every experience and reading claim to the fixture facts. No full-paper reading, achievements or relationship were added. The email was not sent."
+      },
+      "source_sha256": "9e56df19eda8c92a2421379d091da0fe191090c5e85ed07e93f790c5a3e6cd58",
+      "candidate_sha256": "c72be9064e62ed127349edf7ac7a5f6d4546148aa45ae8069a93692323a5d8f8",
+      "source_kind": "constructed_fixture",
+      "loaded_context": [
+        "SKILL.md",
+        "profiles/voice-profile.yaml",
+        "profiles/pre2018-canon-profile.yaml",
+        "agents/protocol.md",
+        "profiles/email-profile.yaml",
+        "workflows/professor-email.md"
+      ],
+      "checks": {
+        "fixture_lock_presence": [],
+        "fixture_lock_check_scope": "Required spans only; synthetic drafting has no original prose for an equivalence check.",
+        "preservation_checker": null,
+        "editorial_audit": {
+          "tool": "tools/writing_auditor.py",
+          "exit_code": 0,
+          "genre": "email",
+          "findings": [],
+          "authorship_inference": "not_performed",
+          "unassessed": [
+            "Claim support in external sources",
+            "Semantic truth",
+            "Grammar",
+            "Personal voice authenticity"
+          ],
+          "limits": "Only a subset of the qualitative taxonomy is implemented as surface diagnostics. Missing warnings do not certify quality."
+        },
+        "manual_semantic_review": {
+          "performed": true,
+          "reviewer": "same model that drafted; no independent replication",
+          "status": "no_unsupported_change_detected_in_bounded_comparison",
+          "scope": "The supplied task facts or original text only; no external factual verification, formal-quality score or personal-voice score.",
+          "automatic_semantics_pass": false
+        }
+      },
+      "unresolved_checks": [
+        "Sender name is not supplied; the visible field must be completed before sending."
+      ],
+      "generator_provenance": {
+        "model": "inherited Codex model; exact backend identifier unavailable",
+        "settings": "host defaults; no sampling-control access"
+      }
+    },
+    {
+      "task_id": "syn-academic",
+      "condition_D": "In this constructed test, method A uses 12 messages and method B uses 20 messages, while both achieve 80% accuracy on 50 examples \\cite{fixture2026}. Method A therefore uses fewer messages in this example, but these results do not establish an accuracy improvement.",
+      "review_mode": "single_model_labeled_review_passes",
+      "actual_review_roles": [
+        "audience-analyst",
+        "voice-analyst",
+        "authenticity-reviewer",
+        "structural-editor",
+        "language-editor",
+        "factual-guardian",
+        "final-auditor"
+      ],
+      "review_role_scope": {
+        "audience-analyst": "Intent pass: reader, purpose, register and requested action.",
+        "voice-analyst": "Comparison pass: consulted only the shared and task-relevant profiles; no personal-voice authenticity claim.",
+        "authenticity-reviewer": "Thinking pass: reconstructed the supplied claim and fact ledger; did not research or add experiences.",
+        "structural-editor": "Reconstruction pass: inspected paragraph or sentence function and made only the recorded changes.",
+        "language-editor": "Reconstruction pass: inspected clarity, grammar and register without deliberate errors or dialect invention.",
+        "factual-guardian": "Verification pass: compared the output with the task source, including associations, qualifiers, negation and causal status.",
+        "final-auditor": "Reviewed the one candidate and actual local-tool reports; reported unresolved issues rather than claiming automatic semantic certification."
+      },
+      "stage_ledger": {
+        "intention": "A short formal results paragraph with a bounded interpretation of supplied toy data.",
+        "thinking": {
+          "argument": "A uses 12 messages; B uses 20. Both have 80% accuracy on 50 examples. Lower message use does not establish improved accuracy.",
+          "immutable_claims": [
+            "A:12 messages",
+            "B:20 messages",
+            "both:80% accuracy",
+            "50 examples",
+            "no established accuracy improvement",
+            "constructed fixture; citation key is synthetic"
+          ]
+        },
+        "comparison": "Applied directness and audience-appropriate craft under the route profile. Sparse informal personal evidence does not validate finished prose as the user's formal voice.",
+        "reconstruction": "Separated the observed numbers from the interpretation and explicitly identified the constructed test.",
+        "verification": "Checked method-to-message associations, shared accuracy, denominator, absence of a claimed accuracy gain, and the exact fixture citation marker. The marker is a test key, not evidence from a real paper."
+      },
+      "source_sha256": "ca25f0a3e5074030bc7ebf7d13efaee622d17dd1a6936839d2d22f17656405dd",
+      "candidate_sha256": "0eb45b7dd06e15900a600154a0c33713c63544e956bd117da53f5a174e6de831",
+      "source_kind": "constructed_fixture",
+      "loaded_context": [
+        "SKILL.md",
+        "profiles/voice-profile.yaml",
+        "profiles/pre2018-canon-profile.yaml",
+        "agents/protocol.md",
+        "profiles/academic-profile.yaml",
+        "workflows/academic-paper.md"
+      ],
+      "checks": {
+        "fixture_lock_presence": [
+          {
+            "span": "12",
+            "present_exactly": true
+          },
+          {
+            "span": "20",
+            "present_exactly": true
+          },
+          {
+            "span": "80%",
+            "present_exactly": true
+          },
+          {
+            "span": "50",
+            "present_exactly": true
+          },
+          {
+            "span": "\\cite{fixture2026}",
+            "present_exactly": true
+          }
+        ],
+        "fixture_lock_check_scope": "Required spans only; synthetic drafting has no original prose for an equivalence check.",
+        "preservation_checker": null,
+        "editorial_audit": {
+          "tool": "tools/writing_auditor.py",
+          "exit_code": 0,
+          "genre": "academic",
+          "findings": [],
+          "authorship_inference": "not_performed",
+          "unassessed": [
+            "Claim support in external sources",
+            "Semantic truth",
+            "Grammar",
+            "Personal voice authenticity"
+          ],
+          "limits": "Only a subset of the qualitative taxonomy is implemented as surface diagnostics. Missing warnings do not certify quality."
+        },
+        "manual_semantic_review": {
+          "performed": true,
+          "reviewer": "same model that drafted; no independent replication",
+          "status": "no_unsupported_change_detected_in_bounded_comparison",
+          "scope": "The supplied task facts or original text only; no external factual verification, formal-quality score or personal-voice score.",
+          "automatic_semantics_pass": false
+        }
+      },
+      "unresolved_checks": [],
+      "generator_provenance": {
+        "model": "inherited Codex model; exact backend identifier unavailable",
+        "settings": "host defaults; no sampling-control access"
+      }
+    },
+    {
+      "task_id": "syn-blog",
+      "condition_D": "A moving average lets the state adjust to a new input while keeping part of its previous value. If the previous state is 10 and the new input is 20, keep 80% of the old state and add 20% of the input: 0.8 × 10 + 0.2 × 20 = 12.\n\nThis update follows $s_t = 0.8s_{t-1} + 0.2x_t$, where $s_t$ is the updated state, $s_{t-1}$ is the previous state and $x_t$ is the new input. This is a toy illustration, not a measured experiment.",
+      "review_mode": "single_model_labeled_review_passes",
+      "actual_review_roles": [
+        "audience-analyst",
+        "voice-analyst",
+        "authenticity-reviewer",
+        "structural-editor",
+        "language-editor",
+        "factual-guardian",
+        "final-auditor"
+      ],
+      "review_role_scope": {
+        "audience-analyst": "Intent pass: reader, purpose, register and requested action.",
+        "voice-analyst": "Comparison pass: consulted only the shared and task-relevant profiles; no personal-voice authenticity claim.",
+        "authenticity-reviewer": "Thinking pass: reconstructed the supplied claim and fact ledger; did not research or add experiences.",
+        "structural-editor": "Reconstruction pass: inspected paragraph or sentence function and made only the recorded changes.",
+        "language-editor": "Reconstruction pass: inspected clarity, grammar and register without deliberate errors or dialect invention.",
+        "factual-guardian": "Verification pass: compared the output with the task source, including associations, qualifiers, negation and causal status.",
+        "final-auditor": "Reviewed the one candidate and actual local-tool reports; reported unresolved issues rather than claiming automatic semantic certification."
+      },
+      "stage_ledger": {
+        "intention": "Explain the recurrence to a general technical reader through intuition, one calculation, then notation.",
+        "thinking": {
+          "argument": "The state combines the previous state with the new input using weights 0.8 and 0.2. The supplied values give 8 + 4 = 12.",
+          "immutable_claims": [
+            "0.8 previous state plus 0.2 input",
+            "previous state10",
+            "input20",
+            "updated state12",
+            "toy illustration only"
+          ]
+        },
+        "comparison": "Applied directness and audience-appropriate craft under the route profile. Sparse informal personal evidence does not validate finished prose as the user's formal voice.",
+        "reconstruction": "Placed the retained-past/new-input mechanism before the concrete update and the exact equation; defined its symbols locally.",
+        "verification": "Recomputed 0.8×10 + 0.2×20 = 12 and checked that 80% and 20% merely express the supplied coefficients. Preserved the equation exactly and retained the illustration/experiment distinction. Added no personal experience."
+      },
+      "source_sha256": "6a7328ca23eb84bed3ac62180b2ba582a3137d9435f8c2a527140cce398a820e",
+      "candidate_sha256": "010ebbaf806552bb69c52e2ad5558cdfccd7308f8c29be0df30581990bfd024b",
+      "source_kind": "constructed_fixture",
+      "loaded_context": [
+        "SKILL.md",
+        "profiles/voice-profile.yaml",
+        "profiles/pre2018-canon-profile.yaml",
+        "agents/protocol.md",
+        "profiles/blog-speaker-profile.yaml",
+        "workflows/research-blog.md"
+      ],
+      "checks": {
+        "fixture_lock_presence": [
+          {
+            "span": "$s_t = 0.8s_{t-1} + 0.2x_t$",
+            "present_exactly": true
+          },
+          {
+            "span": "10",
+            "present_exactly": true
+          },
+          {
+            "span": "20",
+            "present_exactly": true
+          },
+          {
+            "span": "12",
+            "present_exactly": true
+          }
+        ],
+        "fixture_lock_check_scope": "Required spans only; synthetic drafting has no original prose for an equivalence check.",
+        "preservation_checker": null,
+        "editorial_audit": {
+          "tool": "tools/writing_auditor.py",
+          "exit_code": 0,
+          "genre": "blog",
+          "findings": [],
+          "authorship_inference": "not_performed",
+          "unassessed": [
+            "Claim support in external sources",
+            "Semantic truth",
+            "Grammar",
+            "Personal voice authenticity"
+          ],
+          "limits": "Only a subset of the qualitative taxonomy is implemented as surface diagnostics. Missing warnings do not certify quality."
+        },
+        "manual_semantic_review": {
+          "performed": true,
+          "reviewer": "same model that drafted; no independent replication",
+          "status": "no_unsupported_change_detected_in_bounded_comparison",
+          "scope": "The supplied task facts or original text only; no external factual verification, formal-quality score or personal-voice score.",
+          "automatic_semantics_pass": false
+        }
+      },
+      "unresolved_checks": [],
+      "generator_provenance": {
+        "model": "inherited Codex model; exact backend identifier unavailable",
+        "settings": "host defaults; no sampling-control access"
+      }
+    },
+    {
+      "task_id": "syn-speaking",
+      "condition_D": "Look at the two bars. Baseline is on the left at 60%, and Variant is on the right at 60%. Their heights are equal.\n\nThe figure shows equal measured accuracy in this example. It does not show a gain or a causal effect.",
+      "review_mode": "single_model_labeled_review_passes",
+      "actual_review_roles": [
+        "audience-analyst",
+        "voice-analyst",
+        "authenticity-reviewer",
+        "structural-editor",
+        "language-editor",
+        "factual-guardian",
+        "final-auditor"
+      ],
+      "review_role_scope": {
+        "audience-analyst": "Intent pass: reader, purpose, register and requested action.",
+        "voice-analyst": "Comparison pass: consulted only the shared and task-relevant profiles; no personal-voice authenticity claim.",
+        "authenticity-reviewer": "Thinking pass: reconstructed the supplied claim and fact ledger; did not research or add experiences.",
+        "structural-editor": "Reconstruction pass: inspected paragraph or sentence function and made only the recorded changes.",
+        "language-editor": "Reconstruction pass: inspected clarity, grammar and register without deliberate errors or dialect invention.",
+        "factual-guardian": "Verification pass: compared the output with the task source, including associations, qualifiers, negation and causal status.",
+        "final-auditor": "Reviewed the one candidate and actual local-tool reports; reported unresolved issues rather than claiming automatic semantic certification."
+      },
+      "stage_ledger": {
+        "intention": "Short spoken units anchored to the supplied description of a two-bar figure.",
+        "thinking": {
+          "argument": "Both labelled bars are at 60%, so the depicted accuracy is equal. The figure supports no gain or causal-effect claim.",
+          "immutable_claims": [
+            "left:Baseline60%",
+            "right:Variant60%",
+            "equal heights",
+            "equal measured accuracy in example",
+            "no gain or causal effect"
+          ]
+        },
+        "comparison": "Applied directness and audience-appropriate craft under the route profile. Sparse informal personal evidence does not validate finished prose as the user's formal voice.",
+        "reconstruction": "Used a pointing cue, identified left/right labels and values, then stated the bounded conclusion.",
+        "verification": "Compared left/right identities, both values, equal heights and the no-gain/no-causality limitation with the description. No image or deck was supplied for independent visual inspection. No audio read-aloud or timing test was performed."
+      },
+      "source_sha256": "6dcb55806d2e372e77564b2f19c370feaec5670ca58c28d964a6d9211424c189",
+      "candidate_sha256": "cf07ed42d99c06bc35fa32e5198f50263359a88340bb55cbaa34a4bf590b70c8",
+      "source_kind": "constructed_fixture",
+      "loaded_context": [
+        "SKILL.md",
+        "profiles/voice-profile.yaml",
+        "profiles/pre2018-canon-profile.yaml",
+        "agents/protocol.md",
+        "profiles/blog-speaker-profile.yaml",
+        "workflows/speaking-script.md"
+      ],
+      "checks": {
+        "fixture_lock_presence": [
+          {
+            "span": "60%",
+            "present_exactly": true
+          },
+          {
+            "span": "Baseline",
+            "present_exactly": true
+          },
+          {
+            "span": "Variant",
+            "present_exactly": true
+          }
+        ],
+        "fixture_lock_check_scope": "Required spans only; synthetic drafting has no original prose for an equivalence check.",
+        "preservation_checker": null,
+        "editorial_audit": {
+          "tool": "tools/writing_auditor.py",
+          "exit_code": 0,
+          "genre": "speaking",
+          "findings": [],
+          "authorship_inference": "not_performed",
+          "unassessed": [
+            "Claim support in external sources",
+            "Semantic truth",
+            "Grammar",
+            "Personal voice authenticity"
+          ],
+          "limits": "Only a subset of the qualitative taxonomy is implemented as surface diagnostics. Missing warnings do not certify quality."
+        },
+        "manual_semantic_review": {
+          "performed": true,
+          "reviewer": "same model that drafted; no independent replication",
+          "status": "no_unsupported_change_detected_in_bounded_comparison",
+          "scope": "The supplied task facts or original text only; no external factual verification, formal-quality score or personal-voice score.",
+          "automatic_semantics_pass": false
+        }
+      },
+      "unresolved_checks": [
+        "Timing and vocal delivery are untested; correspondence was checked against the description only."
+      ],
+      "generator_provenance": {
+        "model": "inherited Codex model; exact backend identifier unavailable",
+        "settings": "host defaults; no sampling-control access"
+      }
+    },
+    {
+      "task_id": "syn-technical",
+      "condition_D": "Use `python solve.py --seed 7 --limit 50` to read a local file and write a JSON summary. An empty input returns an error.\n\nThis command has not been run for this documentation.",
+      "review_mode": "single_model_labeled_review_passes",
+      "actual_review_roles": [
+        "audience-analyst",
+        "voice-analyst",
+        "authenticity-reviewer",
+        "structural-editor",
+        "language-editor",
+        "factual-guardian",
+        "final-auditor"
+      ],
+      "review_role_scope": {
+        "audience-analyst": "Intent pass: reader, purpose, register and requested action.",
+        "voice-analyst": "Comparison pass: consulted only the shared and task-relevant profiles; no personal-voice authenticity claim.",
+        "authenticity-reviewer": "Thinking pass: reconstructed the supplied claim and fact ledger; did not research or add experiences.",
+        "structural-editor": "Reconstruction pass: inspected paragraph or sentence function and made only the recorded changes.",
+        "language-editor": "Reconstruction pass: inspected clarity, grammar and register without deliberate errors or dialect invention.",
+        "factual-guardian": "Verification pass: compared the output with the task source, including associations, qualifiers, negation and causal status.",
+        "final-auditor": "Reviewed the one candidate and actual local-tool reports; reported unresolved issues rather than claiming automatic semantic certification."
+      },
+      "stage_ledger": {
+        "intention": "Useful command documentation with its intended consequence and known failure.",
+        "thinking": {
+          "argument": "The exact command reads a local file and writes a JSON summary; empty input returns an error.",
+          "immutable_claims": [
+            "exact command retained",
+            "reads local file",
+            "writes JSON summary",
+            "empty input returns error",
+            "not run"
+          ]
+        },
+        "comparison": "Applied directness and audience-appropriate craft under the route profile. Sparse informal personal evidence does not validate finished prose as the user's formal voice.",
+        "reconstruction": "Placed the executable text first, followed by output and failure behavior. Marked execution as not performed.",
+        "verification": "Compared the command byte-for-byte and checked the local-read/JSON-write/empty-input behavior against the fixture. No speed, platform, flag semantics or tested-success claim was added. solve.py was not executed."
+      },
+      "source_sha256": "48b0059f2ec08a532a3ff5726a10afac3b1309d75ab4b197eb130fbe0bfcaa65",
+      "candidate_sha256": "1b00aa4863f7107bf0dc50fe5064812ebd4abd4b294e806771e45762bfd56c75",
+      "source_kind": "constructed_fixture",
+      "loaded_context": [
+        "SKILL.md",
+        "profiles/voice-profile.yaml",
+        "profiles/pre2018-canon-profile.yaml",
+        "agents/protocol.md",
+        "profiles/general-profile.yaml",
+        "workflows/technical-writing.md"
+      ],
+      "checks": {
+        "fixture_lock_presence": [
+          {
+            "span": "`python solve.py --seed 7 --limit 50`",
+            "present_exactly": true
+          },
+          {
+            "span": "JSON",
+            "present_exactly": true
+          }
+        ],
+        "fixture_lock_check_scope": "Required spans only; synthetic drafting has no original prose for an equivalence check.",
+        "preservation_checker": null,
+        "editorial_audit": {
+          "tool": "tools/writing_auditor.py",
+          "exit_code": 0,
+          "genre": "technical",
+          "findings": [],
+          "authorship_inference": "not_performed",
+          "unassessed": [
+            "Claim support in external sources",
+            "Semantic truth",
+            "Grammar",
+            "Personal voice authenticity"
+          ],
+          "limits": "Only a subset of the qualitative taxonomy is implemented as surface diagnostics. Missing warnings do not certify quality."
+        },
+        "manual_semantic_review": {
+          "performed": true,
+          "reviewer": "same model that drafted; no independent replication",
+          "status": "no_unsupported_change_detected_in_bounded_comparison",
+          "scope": "The supplied task facts or original text only; no external factual verification, formal-quality score or personal-voice score.",
+          "automatic_semantics_pass": false
+        }
+      },
+      "unresolved_checks": [
+        "Input filename, selection mechanism, environment and error-recovery details are unspecified."
+      ],
+      "generator_provenance": {
+        "model": "inherited Codex model; exact backend identifier unavailable",
+        "settings": "host defaults; no sampling-control access"
+      }
+    },
+    {
+      "task_id": "syn-linkedin",
+      "condition_D": "I helped test a prototype. The test found a parsing error, which the team corrected. The team plans another test.",
+      "review_mode": "single_model_labeled_review_passes",
+      "actual_review_roles": [
+        "audience-analyst",
+        "voice-analyst",
+        "authenticity-reviewer",
+        "structural-editor",
+        "language-editor",
+        "factual-guardian",
+        "final-auditor"
+      ],
+      "review_role_scope": {
+        "audience-analyst": "Intent pass: reader, purpose, register and requested action.",
+        "voice-analyst": "Comparison pass: consulted only the shared and task-relevant profiles; no personal-voice authenticity claim.",
+        "authenticity-reviewer": "Thinking pass: reconstructed the supplied claim and fact ledger; did not research or add experiences.",
+        "structural-editor": "Reconstruction pass: inspected paragraph or sentence function and made only the recorded changes.",
+        "language-editor": "Reconstruction pass: inspected clarity, grammar and register without deliberate errors or dialect invention.",
+        "factual-guardian": "Verification pass: compared the output with the task source, including associations, qualifiers, negation and causal status.",
+        "final-auditor": "Reviewed the one candidate and actual local-tool reports; reported unresolved issues rather than claiming automatic semantic certification."
+      },
+      "stage_ledger": {
+        "intention": "A short professional post in the supplied constructed persona, grounded only in the described work.",
+        "thinking": {
+          "argument": "The fictional writer helped test; the test found a parsing error; the team corrected it and plans another test.",
+          "immutable_claims": [
+            "fictional persona helped test",
+            "test found parsing error",
+            "team corrected error",
+            "another test planned"
+          ]
+        },
+        "comparison": "Applied directness and audience-appropriate craft under the route profile. Sparse informal personal evidence does not validate finished prose as the user's formal voice.",
+        "reconstruction": "Kept a direct first-person contribution, concrete finding, correction and pending next step.",
+        "verification": "Checked role, finding, correction and future plan against the fixture. No leadership, deployment, customers, accuracy, emotion or significance was introduced. This is a constructed-persona drafting output, not evidence about the real user."
+      },
+      "source_sha256": "76629521342a4f880097234a57239b0a6bb97a7b86087fdf7ae229aaaa94ad46",
+      "candidate_sha256": "011b4e19a9b484a430fc547e4664b5da6b33aee2afaa47cbdaa1b341687a330e",
+      "source_kind": "constructed_fixture",
+      "loaded_context": [
+        "SKILL.md",
+        "profiles/voice-profile.yaml",
+        "profiles/pre2018-canon-profile.yaml",
+        "agents/protocol.md",
+        "profiles/general-profile.yaml",
+        "workflows/general-writing.md"
+      ],
+      "checks": {
+        "fixture_lock_presence": [],
+        "fixture_lock_check_scope": "Required spans only; synthetic drafting has no original prose for an equivalence check.",
+        "preservation_checker": null,
+        "editorial_audit": {
+          "tool": "tools/writing_auditor.py",
+          "exit_code": 0,
+          "genre": "general",
+          "findings": [],
+          "authorship_inference": "not_performed",
+          "unassessed": [
+            "Claim support in external sources",
+            "Semantic truth",
+            "Grammar",
+            "Personal voice authenticity"
+          ],
+          "limits": "Only a subset of the qualitative taxonomy is implemented as surface diagnostics. Missing warnings do not certify quality."
+        },
+        "manual_semantic_review": {
+          "performed": true,
+          "reviewer": "same model that drafted; no independent replication",
+          "status": "no_unsupported_change_detected_in_bounded_comparison",
+          "scope": "The supplied task facts or original text only; no external factual verification, formal-quality score or personal-voice score.",
+          "automatic_semantics_pass": false
+        }
+      },
+      "unresolved_checks": [
+        "The experience is supplied as a fictional fixture; this draft is not authorized as a factual post about the real user."
+      ],
+      "generator_provenance": {
+        "model": "inherited Codex model; exact backend identifier unavailable",
+        "settings": "host defaults; no sampling-control access"
+      }
+    },
+    {
+      "task_id": "syn-informal",
+      "condition_D": "Please explain this part once more.",
+      "review_mode": "single_model_labeled_review_passes",
+      "actual_review_roles": [
+        "audience-analyst",
+        "voice-analyst",
+        "authenticity-reviewer",
+        "structural-editor",
+        "language-editor",
+        "factual-guardian",
+        "final-auditor"
+      ],
+      "review_role_scope": {
+        "audience-analyst": "Intent pass: reader, purpose, register and requested action.",
+        "voice-analyst": "Comparison pass: consulted only the shared and task-relevant profiles; no personal-voice authenticity claim.",
+        "authenticity-reviewer": "Thinking pass: reconstructed the supplied claim and fact ledger; did not research or add experiences.",
+        "structural-editor": "Reconstruction pass: inspected paragraph or sentence function and made only the recorded changes.",
+        "language-editor": "Reconstruction pass: inspected clarity, grammar and register without deliberate errors or dialect invention.",
+        "factual-guardian": "Verification pass: compared the output with the task source, including associations, qualifiers, negation and causal status.",
+        "final-auditor": "Reviewed the one candidate and actual local-tool reports; reported unresolved issues rather than claiming automatic semantic certification."
+      },
+      "stage_ledger": {
+        "intention": "A direct informal request for another explanation.",
+        "thinking": {
+          "argument": "The reader is asked to explain an unspecified part again; no context authorizes elaboration.",
+          "immutable_claims": [
+            "request explanation once more",
+            "part unspecified"
+          ]
+        },
+        "comparison": "Applied directness and audience-appropriate craft under the route profile. Sparse informal personal evidence does not validate finished prose as the user's formal voice.",
+        "reconstruction": "Left the original unchanged because the request is already clear.",
+        "verification": "Compared the exact original and output. No meaning, register, detail or implied context changed. Identity does not certify the original's truth or authenticity."
+      },
+      "source_sha256": "d62ad38ca7abdf35b6a3f04549d78c4ee5d9602686a4f4dc6073c35c3d9c27ba",
+      "candidate_sha256": "d62ad38ca7abdf35b6a3f04549d78c4ee5d9602686a4f4dc6073c35c3d9c27ba",
+      "source_kind": "constructed_fixture",
+      "loaded_context": [
+        "SKILL.md",
+        "profiles/voice-profile.yaml",
+        "profiles/pre2018-canon-profile.yaml",
+        "agents/protocol.md",
+        "profiles/general-profile.yaml",
+        "workflows/general-writing.md"
+      ],
+      "checks": {
+        "fixture_lock_presence": [],
+        "fixture_lock_check_scope": "No explicit task locks supplied; original prose checked separately.",
+        "preservation_checker": {
+          "tool": "tools/preservation_checker.py",
+          "exit_code": 0,
+          "result": {
+            "decision": "identical",
+            "violations": [],
+            "edit_ratio": 0.0,
+            "exact_checks_passed": true,
+            "changed": false,
+            "semantic_verified": false,
+            "grammar_verified": false,
+            "voice_verified": false,
+            "manual_checks": [
+              "Meaning, quantifiers, causality, attribution and evidence",
+              "Scientific truth and logical consistency",
+              "Grammar, user voice and genre suitability"
+            ],
+            "limits": "Exact heuristics can miss entities, context swaps, uncommon LaTeX and paraphrased claims. Changed prose is never automatically cleared. Identical means unchanged, not true or grammatical."
+          }
+        },
+        "editorial_audit": {
+          "tool": "tools/writing_auditor.py",
+          "exit_code": 0,
+          "genre": "general",
+          "findings": [],
+          "authorship_inference": "not_performed",
+          "unassessed": [
+            "Claim support in external sources",
+            "Semantic truth",
+            "Grammar",
+            "Personal voice authenticity"
+          ],
+          "limits": "Only a subset of the qualitative taxonomy is implemented as surface diagnostics. Missing warnings do not certify quality."
+        },
+        "manual_semantic_review": {
+          "performed": true,
+          "reviewer": "same model that drafted; no independent replication",
+          "status": "no_unsupported_change_detected_in_bounded_comparison",
+          "scope": "The supplied task facts or original text only; no external factual verification, formal-quality score or personal-voice score.",
+          "automatic_semantics_pass": false
+        }
+      },
+      "unresolved_checks": [],
+      "generator_provenance": {
+        "model": "inherited Codex model; exact backend identifier unavailable",
+        "settings": "host defaults; no sampling-control access"
+      }
+    }
+  ]
+}

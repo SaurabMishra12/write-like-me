@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "notice": "All seven public tasks are constructed engineering fixtures, not genuine human writing or research evidence. Condition A is unavailable for these fixtures.",
+  "tasks": [
+    {
+      "id": "syn-email",
+      "kind": "constructed_fixture",
+      "genre": "email",
+      "request": "Draft a concise professor outreach email using only the facts. No claim to have read a paper.",
+      "facts": "The sender is a student working on a toy graph-search project. A professor studies search algorithms. The sender has read the professor's abstract, not the full paper. Ask whether a short project discussion would be possible. No names, achievements or personal connection are supplied.",
+      "locks": []
+    },
+    {
+      "id": "syn-academic",
+      "kind": "constructed_fixture",
+      "genre": "academic",
+      "request": "Write a short results paragraph using only the supplied toy experiment facts; distinguish observation from interpretation.",
+      "facts": "These are constructed test facts, not real research: method A uses 12 messages and method B uses 20 messages. Both achieve 80% accuracy on 50 examples. This does not establish an accuracy improvement. Preserve the citation marker \\cite{fixture2026} exactly; it is a test key, not a real paper.",
+      "locks": [
+        "12",
+        "20",
+        "80%",
+        "50",
+        "\\cite{fixture2026}"
+      ]
+    },
+    {
+      "id": "syn-blog",
+      "kind": "constructed_fixture",
+      "genre": "blog",
+      "request": "Explain a scalar moving average using intuition, one concrete step, then the equation. Do not invent personal experience.",
+      "facts": "Toy recurrence: $s_t = 0.8s_{t-1} + 0.2x_t$. With previous state 10 and input 20, the updated state is 12. The state keeps part of the past value and part of the new value. This is an illustration, not a measured experiment.",
+      "locks": [
+        "$s_t = 0.8s_{t-1} + 0.2x_t$",
+        "10",
+        "20",
+        "12"
+      ]
+    },
+    {
+      "id": "syn-speaking",
+      "kind": "constructed_fixture",
+      "genre": "speaking",
+      "request": "Write short speaking notes for the actual described figure. No added causal interpretation.",
+      "facts": "The slide has two bars. The left bar is labelled Baseline at 60%. The right bar is labelled Variant at 60%. Their heights are equal. This figure shows equal measured accuracy in this example; it does not show a gain or a causal effect.",
+      "locks": [
+        "60%",
+        "Baseline",
+        "Variant"
+      ]
+    },
+    {
+      "id": "syn-technical",
+      "kind": "constructed_fixture",
+      "genre": "technical",
+      "request": "Write useful documentation for this command, preserving executable text exactly.",
+      "facts": "The command is `python solve.py --seed 7 --limit 50`. It reads a local file and writes a JSON summary. An empty input returns an error. No speed, compatibility or success claim is provided. Do not claim the command was run.",
+      "locks": [
+        "`python solve.py --seed 7 --limit 50`",
+        "JSON"
+      ]
+    },
+    {
+      "id": "syn-linkedin",
+      "kind": "constructed_fixture",
+      "genre": "general",
+      "request": "Write a short professional post grounded in the facts. No invented emotions, achievements or significance.",
+      "facts": "In this constructed scenario, the writer helped test a prototype. The test found a parsing error. The team corrected it and plans another test. No deployment, customer, accuracy or leadership claim is supported.",
+      "locks": []
+    },
+    {
+      "id": "syn-informal",
+      "kind": "constructed_fixture",
+      "genre": "general",
+      "request": "Make the smallest useful clarity edit. Returning unchanged text is allowed.",
+      "facts": "The complete original message is: Please explain this part once more. No further context is supplied.",
+      "original": "Please explain this part once more.",
+      "locks": []
+    }
+  ]
+}

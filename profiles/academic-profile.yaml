@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "genre": "academic",
+  "personal_confidence": "low; no verified self-written academic paragraph",
+  "craft": [
+    "Begin with a bounded problem, then claim, reason, evidence and warrant.",
+    "Separate method description from actual results and interpretation.",
+    "Define symbols, units, baselines and limitations.",
+    "Use passive voice when it preserves topic continuity; never enforce a quota."
+  ],
+  "locks": [
+    "LaTeX structure",
+    "equations",
+    "citations and bibliography",
+    "numbers",
+    "conclusions"
+  ],
+  "avoid": [
+    "invented research gaps",
+    "novelty inflation",
+    "casualized formal prose"
+  ],
+  "fallback": "Booth/Williams argument architecture; Shannon exact abstraction; Feynman integrity"
+}
+

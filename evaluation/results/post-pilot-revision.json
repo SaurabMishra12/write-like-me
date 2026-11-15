@@ -1,0 +1,15 @@
+{
+  "revision": "0.1.1",
+  "reason": "Public synthetic pilot model review flagged omitted constructed context and an execution-status statement with disputed provenance. Added explicit context retention and scoped process-claim guidance; added conservative evidence-status veto with three independent engineering regression cases.",
+  "based_on": "Public constructed fixture feedback, not private or canon holdout feedback",
+  "profile_changes": false,
+  "pilot_outputs_rewritten": false,
+  "fresh_forward_test": "evaluation/results/evidence-status-forward-test.json",
+  "changed_files": {
+    "SKILL.md": "f01ad4737f40061a58af489d19f8995bb72f3ecd50b99b28528f01285915e08d",
+    "tools/preservation_checker.py": "85d155c2deca192ae69e015df7f2864e2b2fef9495c90c5f57ab42c245369082",
+    "workflows/general-writing.md": "f56973e37f280e33a66c28f59211980c9483bfe491c75e847e82e1f35a9deabc",
+    "agents/authenticity-reviewer.md": "6eec55cef1658e9be8334e7c8d710a83149e782a47baccaa393bf11de83d2c16"
+  },
+  "confirmatory_full_benchmark_rerun": false
+}

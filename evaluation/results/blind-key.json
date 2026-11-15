@@ -1,0 +1,37 @@
+{
+  "syn-email": {
+    "candidate-1": "B",
+    "candidate-2": "C",
+    "candidate-3": "D"
+  },
+  "syn-academic": {
+    "candidate-1": "B",
+    "candidate-2": "D",
+    "candidate-3": "C"
+  },
+  "syn-blog": {
+    "candidate-1": "D",
+    "candidate-2": "B",
+    "candidate-3": "C"
+  },
+  "syn-speaking": {
+    "candidate-1": "B",
+    "candidate-2": "C",
+    "candidate-3": "D"
+  },
+  "syn-technical": {
+    "candidate-1": "C",
+    "candidate-2": "D",
+    "candidate-3": "B"
+  },
+  "syn-linkedin": {
+    "candidate-1": "D",
+    "candidate-2": "C",
+    "candidate-3": "B"
+  },
+  "syn-informal": {
+    "candidate-1": "B",
+    "candidate-2": "C",
+    "candidate-3": "D"
+  }
+}

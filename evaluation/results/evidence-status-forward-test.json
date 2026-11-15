@@ -1,0 +1,408 @@
+{
+  "schema_version": 1,
+  "test_kind": "fresh_forward_test_of_two_new_prompts",
+  "generator": {
+    "kind": "live_model_generation",
+    "model": "host inherited Codex model; exact backend identifier and revision unavailable",
+    "settings": "host defaults; no sampling-control access",
+    "reviewer": "same inherited model, same context",
+    "execution_mode": "single-context labeled five-stage passes; no eight-agent delegation",
+    "human_review_performed": false,
+    "quality_score_assigned": false
+  },
+  "scope": {
+    "outputs_written": 2,
+    "permanent_profile_changes": 0,
+    "prior_results_changes": 0,
+    "external_services_used": false,
+    "forbidden_artifacts_opened_for_this_pass": [],
+    "context_limit": "This agent previously generated B/C baselines in the same conversation context. This forward pass did not open pilot outputs, blind ratings, or post-pilot notes. It is not an independently isolated model session.",
+    "loaded_sources": [
+      "SKILL.md",
+      "profiles/voice-profile.yaml",
+      "profiles/pre2018-canon-profile.yaml",
+      "profiles/general-profile.yaml",
+      "workflows/general-writing.md",
+      "workflows/technical-writing.md"
+    ],
+    "source_scope": "Only the current local skill and relevant shared/general profiles and two route workflows were consulted. Their underlying research archive and private corpus were not opened for this pass."
+  },
+  "tasks": [
+    {
+      "task_id": "fresh-post",
+      "request": "Draft a short professional first-person update from this hypothetical exercise: a student helped inspect a toy CSV parser; the exercise exposed a delimiter issue; another test is planned. No real experience, product launch or measured gain is provided.",
+      "active_route": {
+        "genre": "general/professional first-person update",
+        "profile": "profiles/general-profile.yaml",
+        "workflow": "workflows/general-writing.md",
+        "shared_profiles": [
+          "profiles/voice-profile.yaml",
+          "profiles/pre2018-canon-profile.yaml"
+        ],
+        "basis": [
+          {
+            "path": "SKILL.md",
+            "lines": [
+              24,
+              25
+            ]
+          },
+          {
+            "path": "profiles/general-profile.yaml",
+            "lines": [
+              18,
+              21
+            ]
+          },
+          {
+            "path": "workflows/general-writing.md",
+            "lines": [
+              7,
+              8
+            ]
+          }
+        ]
+      },
+      "output": "In this hypothetical exercise, I helped inspect a toy CSV parser. The exercise exposed a delimiter issue, and another test is planned.",
+      "labeled_passes": [
+        {
+          "stage": "intention",
+          "note": "Give a general professional reader a brief first-person update, with the first person explicitly contained within the hypothetical exercise."
+        },
+        {
+          "stage": "thinking",
+          "note": "Fact ledger: hypothetical status; student helped inspect; toy CSV parser; delimiter issue exposed; another test planned. No supplied correction, launch, measured gain, or real autobiographical event."
+        },
+        {
+          "stage": "comparison",
+          "note": "Use the general profile for direct concrete work, observation, and limitation. The profile does not establish a learned personal professional-post register."
+        },
+        {
+          "stage": "reconstruction",
+          "note": "One writer produced two connected sentences. The fictional student becomes the requested first-person narrator, while the hypothetical label remains in the opening."
+        },
+        {
+          "stage": "verification",
+          "note": "Ran the exact-span guard and then conducted the same-model semantic comparisons below. The guard returned review_required, not semantic clearance."
+        }
+      ],
+      "tool_checks": [
+        {
+          "attempt": 1,
+          "command_argv": [
+            "python",
+            "tools/preservation_checker.py",
+            "/tmp/wlm-evidence-forward-cbozb5m0/fresh-post-source.txt",
+            "/tmp/wlm-evidence-forward-cbozb5m0/fresh-post-output.txt",
+            "--locks",
+            "/tmp/wlm-evidence-forward-cbozb5m0/fresh-post-locks.json"
+          ],
+          "cwd": "/home/saurab/Documents/write like me/write-like-me",
+          "exit_code": 3,
+          "stdout_json": {
+            "decision": "review_required",
+            "violations": [],
+            "edit_ratio": 0.03597122302158273,
+            "exact_checks_passed": true,
+            "changed": true,
+            "semantic_verified": false,
+            "grammar_verified": false,
+            "voice_verified": false,
+            "manual_checks": [
+              "Meaning, quantifiers, causality, attribution and evidence",
+              "Scientific truth and logical consistency",
+              "Grammar, user voice and genre suitability"
+            ],
+            "limits": "Exact heuristics can miss entities, context swaps, uncommon LaTeX and paraphrased claims. Changed prose is never automatically cleared. Identical means unchanged, not true or grammatical."
+          },
+          "stderr": ""
+        }
+      ],
+      "check_input": "In this hypothetical exercise, a student helped inspect a toy CSV parser. The exercise exposed a delimiter issue, and another test is planned.",
+      "check_input_kind": "source fact-ledger sentence constructed directly from the request; not a preexisting human draft",
+      "custom_locks": {
+        "evidence_status": [
+          "hypothetical exercise",
+          "toy CSV parser",
+          "delimiter issue",
+          "another test is planned"
+        ]
+      },
+      "same_model_semantic_review": {
+        "mode": "single-context source-to-output review; no human or independent model reviewer",
+        "findings": [
+          {
+            "source": "Task: hypothetical exercise; no real experience supplied.",
+            "output_span": "In this hypothetical exercise",
+            "note": "Explicit hypothetical status remains attached to the first-person claim.",
+            "rule_source": {
+              "path": "workflows/general-writing.md",
+              "lines": [
+                7,
+                8
+              ]
+            }
+          },
+          {
+            "source": "Task: a student helped inspect a toy CSV parser; first-person update requested.",
+            "output_span": "I helped inspect a toy CSV parser",
+            "note": "The requested perspective conversion assigns the hypothetical student narrator the same helping role; it adds no leadership or authorship claim.",
+            "rule_source": {
+              "path": "SKILL.md",
+              "lines": [
+                31,
+                35
+              ]
+            }
+          },
+          {
+            "source": "Task: the exercise exposed a delimiter issue.",
+            "output_span": "The exercise exposed a delimiter issue",
+            "note": "The supplied observation is retained, without adding a correction or improvement.",
+            "rule_source": {
+              "path": "profiles/general-profile.yaml",
+              "lines": [
+                18,
+                21
+              ]
+            }
+          },
+          {
+            "source": "Task: another test is planned.",
+            "output_span": "another test is planned",
+            "note": "The test remains planned; no completion or successful outcome is stated.",
+            "rule_source": {
+              "path": "SKILL.md",
+              "lines": [
+                34,
+                35
+              ]
+            }
+          }
+        ],
+        "assessment": "The same-model pass identified no added research result, real experience, launch, measured gain, or role inflation. This is a model review note, not independent verification or a quality rating."
+      },
+      "unresolved_limits": [
+        "Professional personal voice is not established by the sparse informal profile.",
+        "Changed prose retains the exact checker decision review_required.",
+        "Same-context model review does not establish reader benefit or human acceptance."
+      ]
+    },
+    {
+      "task_id": "fresh-docs",
+      "request": "Write brief usage documentation. Exact command `python inspect.py --mode sample`. Supplied behavior: reads a local CSV and prints its column names. No execution log, compatibility or performance evidence is supplied.",
+      "active_route": {
+        "genre": "technical usage documentation",
+        "profile": "profiles/general-profile.yaml",
+        "workflow": "workflows/technical-writing.md",
+        "shared_profiles": [
+          "profiles/voice-profile.yaml",
+          "profiles/pre2018-canon-profile.yaml"
+        ],
+        "basis": [
+          {
+            "path": "SKILL.md",
+            "lines": [
+              24,
+              25
+            ]
+          },
+          {
+            "path": "profiles/general-profile.yaml",
+            "lines": [
+              14,
+              16
+            ]
+          },
+          {
+            "path": "workflows/technical-writing.md",
+            "lines": [
+              5,
+              9
+            ]
+          }
+        ]
+      },
+      "output": "Use `python inspect.py --mode sample` to read a local CSV and print its column names.\n\nNo execution check was performed during this documentation draft.",
+      "labeled_passes": [
+        {
+          "stage": "intention",
+          "note": "Put the exact invocation next to the supplied input/output behavior for a reader seeking brief usage help."
+        },
+        {
+          "stage": "thinking",
+          "note": "Fact ledger: exact command; local CSV input; column names printed. Compatibility, performance, installation, error behavior, and execution evidence are absent."
+        },
+        {
+          "stage": "comparison",
+          "note": "Use the technical general-profile rules: purpose and executable command first; protect flags and behavior. Do not supply unsupported environment or speed promises."
+        },
+        {
+          "stage": "reconstruction",
+          "note": "One writer placed the command and intended behavior in one sentence. A separate sentence reports only the actual scope of this draft: the documented command was not executed in this writing check."
+        },
+        {
+          "stage": "verification",
+          "note": "The initial exact guard vetoed a no-to-not epistemic-anchor change. A local wording revision retained No while preserving the same scoped process statement; the rerun returned review_required. Same-model semantic review follows."
+        }
+      ],
+      "tool_checks": [
+        {
+          "attempt": 1,
+          "command_argv": [
+            "python",
+            "tools/preservation_checker.py",
+            "/tmp/wlm-evidence-forward-cbozb5m0/fresh-docs-source.txt",
+            "/tmp/wlm-evidence-forward-cbozb5m0/fresh-docs-output.txt",
+            "--locks",
+            "/tmp/wlm-evidence-forward-cbozb5m0/fresh-docs-locks.json"
+          ],
+          "cwd": "/home/saurab/Documents/write like me/write-like-me",
+          "exit_code": 2,
+          "stdout_json": {
+            "decision": "veto",
+            "violations": [
+              {
+                "kind": "epistemic_anchors",
+                "removed": [
+                  "no"
+                ],
+                "added": [
+                  "not"
+                ],
+                "reason": "Protected sequence changed; review exact original and proposed spans."
+              }
+            ],
+            "edit_ratio": 0.3808049535603715,
+            "exact_checks_passed": false,
+            "changed": true,
+            "semantic_verified": false,
+            "grammar_verified": false,
+            "voice_verified": false,
+            "manual_checks": [
+              "Meaning, quantifiers, causality, attribution and evidence",
+              "Scientific truth and logical consistency",
+              "Grammar, user voice and genre suitability"
+            ],
+            "limits": "Exact heuristics can miss entities, context swaps, uncommon LaTeX and paraphrased claims. Changed prose is never automatically cleared. Identical means unchanged, not true or grammatical."
+          },
+          "stderr": ""
+        },
+        {
+          "attempt": 2,
+          "command_argv": [
+            "python",
+            "tools/preservation_checker.py",
+            "/tmp/wlm-evidence-forward-cbozb5m0/fresh-docs-source.txt",
+            "/tmp/wlm-evidence-forward-cbozb5m0/fresh-docs-output.txt",
+            "--locks",
+            "/tmp/wlm-evidence-forward-cbozb5m0/fresh-docs-locks.json"
+          ],
+          "cwd": "/home/saurab/Documents/write like me/write-like-me",
+          "exit_code": 3,
+          "stdout_json": {
+            "decision": "review_required",
+            "violations": [],
+            "edit_ratio": 0.3254437869822485,
+            "exact_checks_passed": true,
+            "changed": true,
+            "semantic_verified": false,
+            "grammar_verified": false,
+            "voice_verified": false,
+            "manual_checks": [
+              "Meaning, quantifiers, causality, attribution and evidence",
+              "Scientific truth and logical consistency",
+              "Grammar, user voice and genre suitability"
+            ],
+            "limits": "Exact heuristics can miss entities, context swaps, uncommon LaTeX and paraphrased claims. Changed prose is never automatically cleared. Identical means unchanged, not true or grammatical."
+          },
+          "stderr": ""
+        }
+      ],
+      "check_input": "Exact command: `python inspect.py --mode sample`. Supplied behavior: reads a local CSV and prints its column names. No execution log, compatibility or performance evidence is supplied.",
+      "check_input_kind": "source fact-ledger sentence constructed directly from the request; not a preexisting human draft",
+      "initial_candidate": "Use `python inspect.py --mode sample` to read a local CSV and print its column names.\n\nThe command was not run during this writing check.",
+      "initial_veto_disposition": "Initial candidate was replaced. The guard reported a lexical epistemic-anchor mismatch rather than verifying a factual error. Both formulations refer only to the observed scope of this writing check. The final candidate preserves No and was rerun; the guard still does not verify meaning.",
+      "custom_locks": {
+        "command": [
+          "`python inspect.py --mode sample`"
+        ],
+        "terms": [
+          "CSV",
+          "column names"
+        ]
+      },
+      "documented_command_executed": false,
+      "same_model_semantic_review": {
+        "mode": "single-context source-to-output review; no human or independent model reviewer",
+        "findings": [
+          {
+            "source": "Task exact command: `python inspect.py --mode sample`.",
+            "output_span": "`python inspect.py --mode sample`",
+            "note": "The exact invocation is unchanged, including flags and argument. The final exact guard reports no protected-span violation.",
+            "rule_source": {
+              "path": "workflows/technical-writing.md",
+              "lines": [
+                6,
+                9
+              ]
+            }
+          },
+          {
+            "source": "Task behavior: reads a local CSV and prints its column names.",
+            "output_span": "to read a local CSV and print its column names",
+            "note": "The intended input/output behavior is preserved. No file path, installation step, failure recovery, compatibility, or performance claim is added.",
+            "rule_source": {
+              "path": "workflows/technical-writing.md",
+              "lines": [
+                5,
+                8
+              ]
+            }
+          },
+          {
+            "source": "Observed pass actions: only local text-preservation checks were executed; python inspect.py --mode sample was not executed in this pass.",
+            "output_span": "No execution check was performed during this documentation draft.",
+            "note": "The process statement names its actual scope. It does not infer whether the command was ever run elsewhere from the absence of a supplied log. A text-preservation check is distinct from executing the documented command.",
+            "rule_source": {
+              "path": "SKILL.md",
+              "lines": [
+                34,
+                35
+              ]
+            }
+          },
+          {
+            "source": "Task supplies no compatibility or performance evidence.",
+            "output_span": "Use `python inspect.py --mode sample` to read a local CSV and print its column names.",
+            "note": "Usage is presented as the supplied intended behavior rather than a verified execution result. No success, compatibility, or speed claim appears.",
+            "rule_source": {
+              "path": "workflows/technical-writing.md",
+              "lines": [
+                5,
+                9
+              ]
+            }
+          }
+        ],
+        "assessment": "The same-model pass identified no changed command or added product-behavior claim. The final process statement is supported only by this pass action history. This does not establish that the command works."
+      },
+      "unresolved_limits": [
+        "The documented command was not executed, so its actual behavior, environment compatibility, and performance remain unverified.",
+        "The exact checker initial veto and final review_required decision are retained; neither provides semantic clearance.",
+        "Temporary check files can be removed by the host; the source text, candidates, locks, commands, exit codes, and reports are embedded here for review.",
+        "Same-model semantic notes are not independent or human review."
+      ]
+    }
+  ],
+  "overall_limits": [
+    "Two tasks demonstrate only these observed generation and checking actions; they do not establish general effectiveness or personal voice authenticity.",
+    "No quality, superiority, human-acceptance, or detector-evasion claim is made.",
+    "The prompts are new to this forward pass, but the pass is neither blinded nor isolated from the agent prior baseline-generation context."
+  ],
+  "artifact_checks": {
+    "json_parse": "passed",
+    "task_count": 2,
+    "permanent_profiles_altered": false
+  }
+}

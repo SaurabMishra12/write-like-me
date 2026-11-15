@@ -1,0 +1,11 @@
+{
+  "frozen_before_generation": true,
+  "profiles": {
+    "profiles/voice-profile.yaml": "66d538e8a724bd6c124cc87a647020e96c475b33e5997b15ac98ca50c6e3c36b",
+    "profiles/academic-profile.yaml": "15de6aa3ee45630702d7f8e8d273464568cb83c597ea10f40e2593ab8367ede5",
+    "profiles/email-profile.yaml": "53a2a5ff42b5b07dbc4d8abafb43ae50fe5b8176512e63cf907bf6d38794d094",
+    "profiles/blog-speaker-profile.yaml": "f3bd3d02862d9dc25a89744ee61fc3b4589470e0d3fcc02d2a6a6d3d4ade6bb3",
+    "profiles/general-profile.yaml": "0fd4822a8b3da6e3ca3d5f799cb43f56d9e1e42d8168def73cf018fdbd57f9f5",
+    "profiles/pre2018-canon-profile.yaml": "da3f2e2943dd84c2651ab123fceb387b9bfd35a848a74af242921554516e7333"
+  }
+}

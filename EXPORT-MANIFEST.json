@@ -1,0 +1,12 @@
+{
+  "freeze_scope": "Evaluation profile-freeze hashes identify checkout profiles before generation. Export sanitization can change profile bytes; transformations map checkout digests to export digests without changing the original freeze record. SHA256SUMS verifies the exported bytes.",
+  "schema_version": 1,
+  "transformations": [
+    {
+      "checkout_sha256": "66d538e8a724bd6c124cc87a647020e96c475b33e5997b15ac98ca50c6e3c36b",
+      "export_sha256": "2eb3ff5150adf00b22267e3e137c61eb87cf4b08642e01d175108d39b28568e7",
+      "operation": "remove_private_provenance_metadata",
+      "path": "profiles/voice-profile.yaml"
+    }
+  ]
+}

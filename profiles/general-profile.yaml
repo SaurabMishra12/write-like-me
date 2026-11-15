@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "genres": [
+    "general",
+    "informal",
+    "technical",
+    "linkedin"
+  ],
+  "personal_confidence": "medium for direct task prompts; low for other registers",
+  "informal": [
+    "Retain directness and clear supplied expressions",
+    "Do not formalize a short reply into an essay"
+  ],
+  "technical": [
+    "Purpose and executable command before optional background",
+    "Protect code, CLI flags and APIs; lists are useful for procedures"
+  ],
+  "linkedin": [
+    "Concrete work, result and limitation",
+    "No invented emotion, achievements or personal story",
+    "No promotional significance without evidence"
+  ],
+  "fallback": "Orwell/Zinsser economy as craft; actual user wording takes priority"
+}
+

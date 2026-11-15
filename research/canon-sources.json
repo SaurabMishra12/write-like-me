@@ -1,0 +1,697 @@
+{
+  "schema_version": 1,
+  "study_date": "2026-11-15",
+  "cutoff_exclusive": "2018-01-01",
+  "method": {
+    "access": "Opened cited sources with web tools; exact read scope is per record. Search snippets alone did not establish a reading claim.",
+    "date_policy": "Record original publication or delivery separately from edition, host, update and retrieval dates. Unknown is null.",
+    "authorship_policy": "Attribution and institutional provenance are evidence, not forensic authorship proof. Date alone is insufficient.",
+    "copyright_policy": "No copyrighted full text stored. Verbatim benchmark quotations limited to at most 25 words per distinct webpage across this package.",
+    "confidence": "Qualitative provenance/observation confidence; not measured reader benefit.",
+    "profile_rule": "Only profile_eligible true records can support canon principles; heldout source documents must never be used for profile or rule tuning."
+  },
+  "sources": [
+    {
+      "id": "feynman-1963-atoms",
+      "authors": [
+        "Richard P. Feynman",
+        "Robert B. Leighton",
+        "Matthew Sands"
+      ],
+      "title": "The Feynman Lectures on Physics, Volume I, Chapter 1: Atoms in Motion",
+      "original_publication": {
+        "date": "1963",
+        "precision": "year"
+      },
+      "url": "https://www.feynmanlectures.caltech.edu/I_01.html",
+      "host_relationship": "Caltech institutional online edition",
+      "hosting_date": null,
+      "hosting_date_note": "Unknown unless explicitly recorded; retrieval, footer and export dates are not original publication dates.",
+      "retrieved_at": "2026-11-15",
+      "access_status": "selected_passages_read",
+      "actually_read": [
+        "Sections 1.1 and 1.2: teaching order, approximations, atomic model and its idealizations"
+      ],
+      "profile_eligible": true,
+      "provenance_confidence": "high",
+      "limitations": [
+        "Lectures originated in 1961–1963; publication series 1963–1965. Current edited online text, not a frozen 1963 artifact.",
+        "No other volume or lecture recording assessed."
+      ],
+      "supporting_sources_opened": [
+        {
+          "url": "https://www.feynmanlectures.caltech.edu/info/FLP_Original_Course_Notes/index_content.html",
+          "read": "Course and publication history; page copyright 2012, distinct from course dates."
+        },
+        {
+          "url": "https://www.feynmanlectures.caltech.edu/I_copyright.html",
+          "read": "Volume I notice explicitly says originally published 1963; later edition dates distinguished."
+        }
+      ]
+    },
+    {
+      "id": "feynman-1974-cargo",
+      "authors": [
+        "Richard P. Feynman"
+      ],
+      "title": "Cargo Cult Science",
+      "original_publication": {
+        "date": "1974-06",
+        "precision": "month"
+      },
+      "url": "https://calteches.library.caltech.edu/51/2/CargoCult.htm",
+      "host_relationship": "Caltech magazine archive",
+      "hosting_date": null,
+      "hosting_date_note": "Unknown unless explicitly recorded; retrieval, footer and export dates are not original publication dates.",
+      "retrieved_at": "2026-11-15",
+      "access_status": "selected_passages_read",
+      "actually_read": [
+        "Opening examples; paragraphs beginning with the missing feature of scientific integrity through the discussion of reporting counterevidence and implications"
+      ],
+      "profile_eligible": true,
+      "provenance_confidence": "high",
+      "limitations": [
+        "Delivered at Caltech commencement in 1974; June 1974 is the magazine issue date.",
+        "Historical characterizations of other disciplines are not accepted as established facts."
+      ],
+      "supporting_sources_opened": [
+        {
+          "url": "https://calteches.library.caltech.edu/51/",
+          "read": "June 1974 issue and article identity."
+        }
+      ]
+    },
+    {
+      "id": "hamming-1986-research",
+      "authors": [
+        "Richard W. Hamming"
+      ],
+      "title": "You and Your Research",
+      "original_publication": {
+        "date": "1986-03-07",
+        "precision": "day"
+      },
+      "url": "https://www.cs.virginia.edu/~robins/YouAndYourResearch",
+      "host_relationship": "University of Virginia mirror of J. F. Kaiser Bellcore transcription",
+      "hosting_date": null,
+      "hosting_date_note": "Unknown unless explicitly recorded; retrieval, footer and export dates are not original publication dates.",
+      "retrieved_at": "2026-11-15",
+      "access_status": "selected_passages_read",
+      "actually_read": [
+        "Transcriber introduction; opening framing; generalization of problems; communication and presentation discussion",
+        "Selected Q&A for access inspection only, excluded from profile derivation"
+      ],
+      "profile_eligible": true,
+      "provenance_confidence": "moderate",
+      "limitations": [
+        "Talk date, not known transcription publication date.",
+        "Transcriber notes lost inflections/gestures and some interpreted audience questions. Audio not assessed.",
+        "Career advice is anecdotal, not a causal or universal success result."
+      ],
+      "supporting_sources_opened": []
+    },
+    {
+      "id": "shannon-1948-communication",
+      "authors": [
+        "Claude E. Shannon"
+      ],
+      "title": "A Mathematical Theory of Communication",
+      "original_publication": {
+        "date": "1948",
+        "precision": "year"
+      },
+      "url": "https://web.mit.edu/6.441/spring05/reading/shannon1948.pdf",
+      "host_relationship": "MIT academic host of primary paper reprint",
+      "hosting_date": null,
+      "hosting_date_note": "Unknown unless explicitly recorded; retrieval, footer and export dates are not original publication dates.",
+      "retrieved_at": "2026-11-15",
+      "access_status": "selected_passages_read",
+      "actually_read": [
+        "Introduction on PDF pages 1–3: engineering problem, logarithmic measure rationale, units and communication-system parts"
+      ],
+      "profile_eligible": true,
+      "provenance_confidence": "high",
+      "limitations": [
+        "Original journal publication in July and October 1948; corrected reprint states this on page 1.",
+        "Only introduction inspected for craft. No claim to verify all proofs or original printing."
+      ],
+      "supporting_sources_opened": [
+        {
+          "url": "https://www.nokia.com/bell-labs/publications-and-media/publications/a-mathematical-theory-of-communication/",
+          "read": "Bell Labs metadata (1 July 1948) and opening paragraphs."
+        },
+        {
+          "url": "https://neilsloane.com/doc/shannonbib.html",
+          "read": "Coeditor bibliography item 37 gives July/October 1948 journal parts, item 38 distinguishes the 1949 book."
+        }
+      ]
+    },
+    {
+      "id": "karpathy-2015-rnn",
+      "authors": [
+        "Andrej Karpathy"
+      ],
+      "title": "The Unreasonable Effectiveness of Recurrent Neural Networks",
+      "original_publication": {
+        "date": "2015-05-21",
+        "precision": "day"
+      },
+      "url": "https://karpathy.github.io/2015/05/21/rnn-effectiveness/",
+      "host_relationship": "Author blog",
+      "hosting_date": null,
+      "hosting_date_note": "Unknown unless explicitly recorded; retrieval, footer and export dates are not original publication dates.",
+      "retrieved_at": "2026-11-15",
+      "access_status": "selected_passages_read",
+      "actually_read": [
+        "Opening; Recurrent Neural Networks; RNN computation; small character-model teaching example"
+      ],
+      "profile_eligible": true,
+      "provenance_confidence": "high",
+      "limitations": [
+        "Only attributed author explanatory prose is eligible.",
+        "All generated samples, third-party quotations, comments, navigation and later additions excluded.",
+        "Source Code section excluded from derivation; no experiments rerun."
+      ],
+      "supporting_sources_opened": []
+    },
+    {
+      "id": "karpathy-2016-backprop",
+      "authors": [
+        "Andrej Karpathy"
+      ],
+      "title": "Yes you should understand backprop",
+      "original_publication": {
+        "date": "2016-12-19",
+        "precision": "day"
+      },
+      "url": "https://karpathy.medium.com/yes-you-should-understand-backprop-e2f06eab496b",
+      "host_relationship": "Author publication on Medium",
+      "hosting_date": null,
+      "hosting_date_note": "Unknown unless explicitly recorded; retrieval, footer and export dates are not original publication dates.",
+      "retrieved_at": "2026-11-15",
+      "access_status": "selected_passages_read",
+      "actually_read": [
+        "Opening student objection; sigmoid and ReLU failure examples; RNN-gradient discussion"
+      ],
+      "profile_eligible": true,
+      "provenance_confidence": "high",
+      "limitations": [
+        "Selected sections only. Historical code and all technical/numerical claims were not independently audited."
+      ],
+      "supporting_sources_opened": []
+    },
+    {
+      "id": "kalam-2003-students",
+      "authors": [
+        "A. P. J. Abdul Kalam"
+      ],
+      "title": "Address While Interaction With Students",
+      "original_publication": {
+        "date": "2003-02-21",
+        "precision": "day"
+      },
+      "url": "https://www.presidentofindia.gov.in/dr-apj-abdul-kalam/speeches/address-while-interaction-students",
+      "host_relationship": "Official President of India speech archive",
+      "hosting_date": null,
+      "hosting_date_note": "Unknown unless explicitly recorded; retrieval, footer and export dates are not original publication dates.",
+      "retrieved_at": "2026-11-15",
+      "access_status": "selected_passages_read",
+      "actually_read": [
+        "Opening student framing; student responses; Thumba narrative"
+      ],
+      "profile_eligible": true,
+      "provenance_confidence": "high",
+      "limitations": [
+        "Delivery date and Coimbatore location are printed.",
+        "Apparent historical/date errors and transcription artifacts are not propagated as facts. Textual craft only; audio not assessed."
+      ],
+      "supporting_sources_opened": []
+    },
+    {
+      "id": "kalam-2007-red-fort",
+      "authors": [
+        "A. P. J. Abdul Kalam"
+      ],
+      "title": "Address to the Nation From the Ramparts of the Red Fort, New Delhi",
+      "original_publication": {
+        "date": "2007-05-11",
+        "precision": "day"
+      },
+      "url": "https://www.presidentofindia.gov.in/dr-apj-abdul-kalam/speeches/address-nation-ramparts-red-fort-new-delhi",
+      "host_relationship": "Official President of India speech archive",
+      "hosting_date": null,
+      "hosting_date_note": "Unknown unless explicitly recorded; retrieval, footer and export dates are not original publication dates.",
+      "retrieved_at": "2026-11-15",
+      "access_status": "selected_passages_read",
+      "actually_read": [
+        "Opening through Integrated Action for Development, vision list and civic-participation conclusion"
+      ],
+      "profile_eligible": true,
+      "provenance_confidence": "high",
+      "limitations": [
+        "Seven Point Oath excluded from profile derivation.",
+        "2020 vision is historical aspiration; no achieved-outcome claim."
+      ],
+      "supporting_sources_opened": []
+    },
+    {
+      "id": "sagan-1994-pale-blue-dot",
+      "authors": [
+        "Carl Sagan"
+      ],
+      "title": "Pale Blue Dot: institutional excerpt",
+      "original_publication": {
+        "date": "1994",
+        "precision": "year"
+      },
+      "url": "https://www.planetary.org/worlds/pale-blue-dot",
+      "host_relationship": "Planetary Society, co-founded by Sagan, hosts attributed copyrighted book excerpt",
+      "hosting_date": null,
+      "hosting_date_note": "Unknown unless explicitly recorded; retrieval, footer and export dates are not original publication dates.",
+      "retrieved_at": "2026-11-15",
+      "access_status": "selected_passages_read",
+      "actually_read": [
+        "First three excerpt paragraphs only, from opening pointing sentences through the paragraph challenging human self-importance"
+      ],
+      "profile_eligible": true,
+      "provenance_confidence": "high",
+      "limitations": [
+        "Book attribution and copyright are 1994; secondary rights notice 2006 is distinct.",
+        "Fourth and final excerpt paragraphs excluded from profile derivation; whole book and audio not assessed.",
+        "Rhetorical interpretation is not proof of ethical or empirical conclusions."
+      ],
+      "supporting_sources_opened": []
+    },
+    {
+      "id": "orwell-1946-politics",
+      "authors": [
+        "George Orwell"
+      ],
+      "title": "Politics and the English Language",
+      "original_publication": {
+        "date": "1946-04",
+        "precision": "month"
+      },
+      "url": "https://www.orwellfoundation.com/the-orwell-foundation/orwell/essays-and-other-works/politics-and-the-english-language/",
+      "host_relationship": "Foundation text reproduced with estate permission",
+      "hosting_date": null,
+      "hosting_date_note": "Unknown unless explicitly recorded; retrieval, footer and export dates are not original publication dates.",
+      "retrieved_at": "2026-11-15",
+      "access_status": "selected_passages_read",
+      "actually_read": [
+        "Diagnosis; prose comparison; euphemism discussion; closing rules and qualifications; original-publication footer"
+      ],
+      "profile_eligible": true,
+      "provenance_confidence": "high",
+      "limitations": [
+        "Original footer: Horizon, April 1946.",
+        "Quoted bad examples and other authors are not positive Orwell style samples.",
+        "Does not justify absolute bans on passives, specialist vocabulary, or long sentences."
+      ],
+      "supporting_sources_opened": []
+    },
+    {
+      "id": "zinsser-2009-esl",
+      "authors": [
+        "William Zinsser"
+      ],
+      "title": "Writing English as a Second Language",
+      "original_publication": {
+        "date": "2009-12-01",
+        "precision": "day"
+      },
+      "url": "https://theamericanscholar.org/writing-english-as-a-second-language/",
+      "host_relationship": "Original publisher of attributed author talk text",
+      "hosting_date": null,
+      "hosting_date_note": "Unknown unless explicitly recorded; retrieval, footer and export dates are not original publication dates.",
+      "retrieved_at": "2026-11-15",
+      "access_status": "selected_passages_read",
+      "actually_read": [
+        "Speech frame; contrast between abstract noun phrases and concrete actions; four-principles discussion"
+      ],
+      "profile_eligible": true,
+      "provenance_confidence": "high",
+      "limitations": [
+        "Speech delivered 11 August 2009; published 1 December 2009.",
+        "Broad generalizations about languages and cultures are not adopted as linguistic facts or editing rules."
+      ],
+      "supporting_sources_opened": []
+    },
+    {
+      "id": "zinsser-2009-revisions",
+      "authors": [
+        "William Zinsser"
+      ],
+      "title": "Visions and Revisions",
+      "original_publication": {
+        "date": "2009-03-01",
+        "precision": "day"
+      },
+      "url": "https://theamericanscholar.org/visions-and-revisions/",
+      "host_relationship": "Original publisher of attributed author essay",
+      "hosting_date": null,
+      "hosting_date_note": "Unknown unless explicitly recorded; retrieval, footer and export dates are not original publication dates.",
+      "retrieved_at": "2026-11-15",
+      "access_status": "selected_passages_read",
+      "actually_read": [
+        "Opening account of book design and teacher voice; genre examples; self-critique of selection/pronouns; passage identifying spring 1976 publication"
+      ],
+      "profile_eligible": true,
+      "provenance_confidence": "high",
+      "limitations": [
+        "Supports author testimony that On Writing Well first appeared spring 1976.",
+        "Full On Writing Well was not read. Do not treat historical fair-use advice in this essay as a legal rule."
+      ],
+      "supporting_sources_opened": []
+    },
+    {
+      "id": "zinsser-1976-book-metadata",
+      "authors": [
+        "William Zinsser"
+      ],
+      "title": "On Writing Well",
+      "original_publication": {
+        "date": "1976",
+        "precision": "year"
+      },
+      "url": "https://theamericanscholar.org/visions-and-revisions/",
+      "host_relationship": "Author retrospective supplies first-publication evidence",
+      "hosting_date": null,
+      "hosting_date_note": "Unknown unless explicitly recorded; retrieval, footer and export dates are not original publication dates.",
+      "retrieved_at": "2026-11-15",
+      "access_status": "metadata_only",
+      "actually_read": [
+        "Author statement that book appeared in spring 1976"
+      ],
+      "profile_eligible": false,
+      "provenance_confidence": "high",
+      "limitations": [
+        "Book not read; evidence is author retrospective, not book text."
+      ],
+      "supporting_sources_opened": []
+    },
+    {
+      "id": "pinker-2014-bad-writing",
+      "authors": [
+        "Steven Pinker"
+      ],
+      "title": "The Source of Bad Writing",
+      "original_publication": {
+        "date": "2014-09-25",
+        "precision": "day"
+      },
+      "url": "https://stevenpinker.com/files/pinker/files/documents/the-source-of-bad-writing.pdf",
+      "host_relationship": "Author-hosted copy of Wall Street Journal article",
+      "hosting_date": null,
+      "hosting_date_note": "Unknown unless explicitly recorded; retrieval, footer and export dates are not original publication dates.",
+      "retrieved_at": "2026-11-15",
+      "access_status": "selected_passages_read",
+      "actually_read": [
+        "Two-page article: reader knowledge, missing steps, representative-reader feedback and delayed self-revision"
+      ],
+      "profile_eligible": true,
+      "provenance_confidence": "high",
+      "limitations": [
+        "PDF has a 2026 Factiva export/footer and May 2026 export timestamp, but explicitly identifies original article date 25 September 2014.",
+        "Full Sense of Style not read; rhetorical examples not independently fact-checked."
+      ],
+      "supporting_sources_opened": []
+    },
+    {
+      "id": "pinker-2014-book-metadata",
+      "authors": [
+        "Steven Pinker"
+      ],
+      "title": "The Sense of Style",
+      "original_publication": {
+        "date": "2014-09-04",
+        "precision": "day"
+      },
+      "url": "https://www.penguin.co.uk/books/183573/the-sense-of-style-by-pinker-steven/9781846145513",
+      "host_relationship": "Publisher edition record",
+      "hosting_date": null,
+      "hosting_date_note": "Unknown unless explicitly recorded; retrieval, footer and export dates are not original publication dates.",
+      "retrieved_at": "2026-11-15",
+      "access_status": "metadata_only",
+      "actually_read": [
+        "Publication date and ebook identity; description"
+      ],
+      "profile_eligible": false,
+      "provenance_confidence": "high",
+      "limitations": [
+        "Date refers to listed UK ebook edition. Full book not read."
+      ],
+      "supporting_sources_opened": []
+    },
+    {
+      "id": "booth-colomb-williams-third-ed-interview",
+      "authors": [
+        "Wayne C. Booth",
+        "Gregory G. Colomb",
+        "Joseph M. Williams"
+      ],
+      "title": "The Craft of Research: an interview with the authors, third edition",
+      "original_publication": {
+        "date": "2008",
+        "precision": "year"
+      },
+      "url": "https://press.uchicago.edu/Misc/Chicago/065685in.html",
+      "host_relationship": "Publisher-hosted author interview",
+      "hosting_date": null,
+      "hosting_date_note": "Unknown unless explicitly recorded; retrieval, footer and export dates are not original publication dates.",
+      "retrieved_at": "2026-11-15",
+      "access_status": "selected_passages_read",
+      "actually_read": [
+        "Questions about reader relationship and research process; collaborative revision; difficulties with significance, data and follow-through; copyright notice"
+      ],
+      "profile_eligible": true,
+      "provenance_confidence": "high",
+      "limitations": [
+        "Page identifies third edition and carries ©2008; exact interview day not printed.",
+        "Interview is joint voice. No individual-author style or full-book-reading claim."
+      ],
+      "supporting_sources_opened": []
+    },
+    {
+      "id": "craft-book-edition-metadata",
+      "authors": [
+        "Wayne C. Booth",
+        "Gregory G. Colomb",
+        "Joseph M. Williams",
+        "Joseph Bizup",
+        "William T. FitzGerald"
+      ],
+      "title": "The Craft of Research: edition metadata",
+      "original_publication": {
+        "date": "1995",
+        "precision": "year"
+      },
+      "url": "https://press.uchicago.edu/ucp/books/book/chicago/C/bo215874008",
+      "host_relationship": "Publisher current fifth-edition record; quoted review reports first/previous edition dates",
+      "hosting_date": null,
+      "hosting_date_note": "Unknown unless explicitly recorded; retrieval, footer and export dates are not original publication dates.",
+      "retrieved_at": "2026-11-15",
+      "access_status": "metadata_only",
+      "actually_read": [
+        "©2024 fifth-edition identity; quoted Booklist review gives 1995 first and 2016 fourth edition dates"
+      ],
+      "profile_eligible": false,
+      "provenance_confidence": "moderate",
+      "limitations": [
+        "1995 and 2016 are edition-history evidence, not a reading of either edition.",
+        "The 2024 fifth edition is post-cutoff and excluded from profile evidence; do not import new generative-AI or presentation chapters into the pre-2018 corpus."
+      ],
+      "supporting_sources_opened": []
+    },
+    {
+      "id": "olah-2015-lstm",
+      "authors": [
+        "Christopher Olah"
+      ],
+      "title": "Understanding LSTM Networks",
+      "original_publication": {
+        "date": "2015-08-27",
+        "precision": "day"
+      },
+      "url": "https://colah.github.io/posts/2015-08-Understanding-LSTMs/",
+      "host_relationship": "Author blog",
+      "hosting_date": null,
+      "hosting_date_note": "Unknown unless explicitly recorded; retrieval, footer and export dates are not original publication dates.",
+      "retrieved_at": "2026-11-15",
+      "access_status": "selected_passages_read",
+      "actually_read": [
+        "Opening; dependency examples; notation legend; cell state; first gate steps"
+      ],
+      "profile_eligible": true,
+      "provenance_confidence": "high",
+      "limitations": [
+        "Textual diagram references inspected, no independent technical audit or code run.",
+        "Historical broad capability claims are not current recommendations."
+      ],
+      "supporting_sources_opened": []
+    },
+    {
+      "id": "shannon-1952-creative-bibliography",
+      "authors": [
+        "N. J. A. Sloane",
+        "A. D. Wyner"
+      ],
+      "title": "Bibliography of Claude Elwood Shannon, item 72",
+      "original_publication": {
+        "date": "1952-03-20",
+        "precision": "day"
+      },
+      "url": "https://neilsloane.com/doc/shannonbib.html",
+      "host_relationship": "Collected-papers coeditor bibliography",
+      "hosting_date": null,
+      "hosting_date_note": "Unknown unless explicitly recorded; retrieval, footer and export dates are not original publication dates.",
+      "retrieved_at": "2026-11-15",
+      "access_status": "metadata_only",
+      "actually_read": [
+        "Item 72: ten-page Bell Laboratories typescript; page last modified 2 May 1998"
+      ],
+      "profile_eligible": false,
+      "provenance_confidence": "high",
+      "limitations": [
+        "Date refers to the described Shannon typescript, not bibliography publication.",
+        "Independent evidence of existence/date, not verification of transcribed wording."
+      ],
+      "supporting_sources_opened": []
+    },
+    {
+      "id": "shannon-1952-creative-transcription",
+      "authors": [
+        "Attributed to Claude E. Shannon; transcriber unspecified"
+      ],
+      "title": "Creative Thinking",
+      "original_publication": {
+        "date": "1952-03-20",
+        "precision": "day"
+      },
+      "url": "https://www1.ece.neu.edu/~naderi/Claude%20Shannon.html",
+      "host_relationship": "Academic-hosted transcription without verified typescript facsimile",
+      "hosting_date": null,
+      "hosting_date_note": "Unknown unless explicitly recorded; retrieval, footer and export dates are not original publication dates.",
+      "retrieved_at": "2026-11-15",
+      "access_status": "provisional_transcription",
+      "actually_read": [
+        "Readable transcription, including simplification, analogy, reframing and structural-decomposition passages"
+      ],
+      "profile_eligible": false,
+      "provenance_confidence": "low",
+      "limitations": [
+        "Clearly garbled wording and encoding. Exact wording and transcription chain not verified; no quotes retained and no profile rule derived."
+      ],
+      "supporting_sources_opened": [
+        {
+          "url": "https://rafamarino.com/misc/shannon/",
+          "read": "Later mirror notes table of contents and subtitles added April 2020; not used as 1952 wording evidence."
+        }
+      ]
+    },
+    {
+      "id": "nielsen-ch1-unavailable",
+      "authors": [
+        "Michael Nielsen"
+      ],
+      "title": "Neural Networks and Deep Learning, Chapter 1",
+      "original_publication": {
+        "date": null,
+        "precision": "unverified"
+      },
+      "url": "https://neuralnetworksanddeeplearning.com/chap1.html",
+      "host_relationship": "Author-site request attempted",
+      "hosting_date": null,
+      "hosting_date_note": "Unknown unless explicitly recorded; retrieval, footer and export dates are not original publication dates.",
+      "retrieved_at": "2026-11-15",
+      "access_status": "unavailable_http_502",
+      "actually_read": [],
+      "profile_eligible": false,
+      "provenance_confidence": "low",
+      "limitations": [
+        "Failed fetch in this run; chapter not read. No publication date or author-specific craft claim established from this request."
+      ],
+      "supporting_sources_opened": []
+    },
+    {
+      "id": "tao-current-writing-page",
+      "authors": [
+        "Terence Tao"
+      ],
+      "title": "On writing",
+      "original_publication": {
+        "date": null,
+        "precision": "unverified_current_composite"
+      },
+      "url": "https://terrytao.wordpress.com/advice-on-writing-papers/",
+      "host_relationship": "Author current mutable advice collection",
+      "hosting_date": null,
+      "hosting_date_note": "Unknown unless explicitly recorded; retrieval, footer and export dates are not original publication dates.",
+      "retrieved_at": "2026-11-15",
+      "access_status": "current_page_read_historical_version_unverified",
+      "actually_read": [
+        "Current opening advice list and present-day links"
+      ],
+      "profile_eligible": false,
+      "provenance_confidence": "moderate",
+      "limitations": [
+        "No dated pre-2018 snapshot established. Current collection contains later additions; excluded from pre-2018 derivation."
+      ],
+      "supporting_sources_opened": []
+    },
+    {
+      "id": "orwell-1946-why-i-write-heldout",
+      "authors": [
+        "George Orwell"
+      ],
+      "title": "Why I Write",
+      "original_publication": {
+        "date": "1946",
+        "precision": "season"
+      },
+      "url": "https://www.orwellfoundation.com/the-orwell-foundation/orwell/essays-and-other-works/why-i-write/",
+      "host_relationship": "Foundation text reproduced with estate permission",
+      "hosting_date": null,
+      "hosting_date_note": "Unknown unless explicitly recorded; retrieval, footer and export dates are not original publication dates.",
+      "retrieved_at": "2026-11-15",
+      "access_status": "heldout_source_curated",
+      "actually_read": [
+        "Aesthetic enthusiasm item for short excerpt curation; original-publication footer"
+      ],
+      "profile_eligible": false,
+      "provenance_confidence": "high",
+      "limitations": [
+        "Original footer: Gangrel, No. 4, Summer 1946.",
+        "Entire document excluded from profile and engine-rule derivation; curator saw it only to select/verify evaluation material."
+      ],
+      "supporting_sources_opened": []
+    },
+    {
+      "id": "kalam-2006-us-india-heldout",
+      "authors": [
+        "A. P. J. Abdul Kalam"
+      ],
+      "title": "Address at the US-India Summit on Education, Research and Technology",
+      "original_publication": {
+        "date": "2006-05-31",
+        "precision": "day"
+      },
+      "url": "https://presidentofindia.nic.in/dr-apj-abdul-kalam/speeches/address-us-india-summit-education-research-and-technology-university",
+      "host_relationship": "Official President of India speech archive",
+      "hosting_date": "2026-09-16 (last updated; initial hosting date unknown)",
+      "hosting_date_note": "Unknown unless explicitly recorded; retrieval, footer and export dates are not original publication dates.",
+      "retrieved_at": "2026-11-15",
+      "access_status": "heldout_source_curated",
+      "actually_read": [
+        "Date/header and nano-technology passage for short excerpt curation"
+      ],
+      "profile_eligible": false,
+      "provenance_confidence": "high",
+      "limitations": [
+        "Entire document excluded from profile and engine-rule derivation.",
+        "Page says last updated 16 September 2026; original delivery date 31 May 2006. Historical aspirations are not outcome evidence."
+      ],
+      "supporting_sources_opened": []
+    }
+  ]
+}

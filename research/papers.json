@@ -1,0 +1,780 @@
+{
+  "schema_version": "1.0",
+  "title": "Write Like Me: verified research register",
+  "review_date": "2026-11-15",
+  "review_type": "targeted, non-systematic evidence review",
+  "scope": "Stylometry; AI-text detection and its limitations; co-writing; style transfer; personalization; preference optimization; corpus vocabulary; multilingual evaluation; decoding and evaluation.",
+  "search_method": {
+    "approach": "Targeted title/author searches, followed by opening publisher/proceedings pages or primary article PDFs. Official publication records resolve preprint-versus-publication status.",
+    "sources": [
+      "ACL Anthology",
+      "PMLR",
+      "official ICLR proceedings",
+      "official NeurIPS proceedings",
+      "Wiley",
+      "Springer Nature",
+      "PubMed Central primary-article archive",
+      "TMLR/OpenReview",
+      "author and institutional published-PDF repositories"
+    ],
+    "search_families": [
+      "authorship attribution survey function words stylometry",
+      "DetectGPT Fast-DetectGPT non-native English detector bias detector stress testing",
+      "AI-polished writing M4 multilingual detection",
+      "CoAuthor LaMP TextSETTR style transfer evaluation",
+      "RLHF generalisation diversity DPO sycophancy",
+      "Kobak excess vocabulary biomedical abstracts",
+      "LinCE code switching Hindi English",
+      "neural text degeneration LLM-as-a-judge"
+    ],
+    "inclusion": "Relevant original research or foundational synthesis with verified bibliographic metadata and an opened primary paper or official abstract/record.",
+    "exclusion": "Vendor rankings, blogs, social posts, unverified citations, and papers whose only accessible evidence was a secondary summary.",
+    "limitations": [
+      "No preregistration, exhaustive database export, duplicate screening, formal risk-of-bias instrument, or meta-analysis.",
+      "This selection is not a claim to cover all work through the review date; papers selected span 2009–2025.",
+      "Abstract-level records support only bounded summaries; no replication or quantitative pooling was performed.",
+      "All included entries have published peer-reviewed venues; historical arXiv versions are not separate evidence.",
+      "No private user writing was read; no personalized model or detector was tested."
+    ]
+  },
+  "papers": [
+    {
+      "id": "stamatatos2009survey",
+      "bibtex_key": "stamatatos2009survey",
+      "title": "A survey of modern authorship attribution methods",
+      "authors": [
+        "Efstathios Stamatatos"
+      ],
+      "authors_complete": true,
+      "year": 2009,
+      "venue": "Journal of the American Society for Information Science and Technology, 60(3), 538–556",
+      "publication_status": "peer-reviewed journal survey",
+      "official_url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/asi.21001",
+      "doi": "10.1002/asi.21001",
+      "topics": [
+        "stylometry",
+        "authorship"
+      ],
+      "research_question": "How are authorial text representations and classifiers evaluated?",
+      "method": "Surveys computational representations, classification settings, and evaluation practices.",
+      "key_findings": "Authorship analysis depends on task settings and evaluation methodology.",
+      "limitations": "Pre-LLM survey; no validation of this project or generative personalization.",
+      "project_implication": "Use interpretable features with documented samples and held-out evaluation.",
+      "verified_on": "2026-11-15",
+      "verification": {
+        "level": "Opened publisher/proceedings abstract and metadata",
+        "evidence_url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/asi.21001",
+        "notes": [
+          "Issue year is 2009; publisher gives first online publication as 16 December 2008.",
+          "Only publisher abstract and bibliographic record were accessible; no exhaustive full-text claim."
+        ]
+      }
+    },
+    {
+      "id": "kestemont2014function",
+      "bibtex_key": "kestemont2014function",
+      "title": "Function Words in Authorship Attribution. From Black Magic to Theory?",
+      "authors": [
+        "Mike Kestemont"
+      ],
+      "authors_complete": true,
+      "year": 2014,
+      "venue": "Proceedings of the 3rd Workshop on Computational Linguistics for Literature (CLFL), 59–66",
+      "publication_status": "peer-reviewed workshop position paper",
+      "official_url": "https://aclanthology.org/W14-0908/",
+      "doi": "10.3115/v1/W14-0908",
+      "topics": [
+        "stylometry",
+        "function words"
+      ],
+      "research_question": "Why do function-word features help stylometry?",
+      "method": "Theoretical discussion connecting frequent grammatical items and character n-grams.",
+      "key_findings": "Feature choices need explanation; striking rare words can reflect topic or genre.",
+      "limitations": "Position paper, not a universal author-identification guarantee.",
+      "project_implication": "Keep function-word summaries as descriptive comparisons, never identity proof.",
+      "verified_on": "2026-11-15",
+      "verification": {
+        "level": "Opened proceedings metadata and primary PDF; inspected abstract and methodological discussion",
+        "evidence_url": "https://aclanthology.org/W14-0908.pdf",
+        "notes": []
+      }
+    },
+    {
+      "id": "jin2022style",
+      "bibtex_key": "jin2022style",
+      "title": "Deep Learning for Text Style Transfer: A Survey",
+      "authors": [
+        "Di Jin",
+        "Zhijing Jin",
+        "Zhiting Hu",
+        "Olga Vechtomova",
+        "Rada Mihalcea"
+      ],
+      "authors_complete": true,
+      "year": 2022,
+      "venue": "Computational Linguistics, 48(1), 155–205",
+      "publication_status": "peer-reviewed journal survey",
+      "official_url": "https://aclanthology.org/2022.cl-1.6/",
+      "doi": "10.1162/coli_a_00426",
+      "topics": [
+        "style transfer"
+      ],
+      "research_question": "How is neural text style transfer formulated and evaluated?",
+      "method": "Surveys over 100 representative articles, datasets, methods, and evaluation approaches.",
+      "key_findings": "Style transfer spans multiple attributes and parallel/nonparallel data settings.",
+      "limitations": "Survey predates many instruction-tuned models; style labels simplify personal voice.",
+      "project_implication": "Specify desired changes and protected meaning separately.",
+      "verified_on": "2026-11-15",
+      "verification": {
+        "level": "Opened publisher/proceedings abstract and metadata",
+        "evidence_url": "https://aclanthology.org/2022.cl-1.6/",
+        "notes": []
+      }
+    },
+    {
+      "id": "mir2019evaluating",
+      "bibtex_key": "mir2019evaluating",
+      "title": "Evaluating Style Transfer for Text",
+      "authors": [
+        "Remi Mir",
+        "Bjarke Felbo",
+        "Nick Obradovich",
+        "Iyad Rahwan"
+      ],
+      "authors_complete": true,
+      "year": 2019,
+      "venue": "NAACL-HLT 2019, Volume 1, 495–504",
+      "publication_status": "peer-reviewed conference paper",
+      "official_url": "https://aclanthology.org/N19-1049/",
+      "doi": "10.18653/v1/N19-1049",
+      "topics": [
+        "style transfer",
+        "evaluation"
+      ],
+      "research_question": "How should text style transfer be assessed?",
+      "method": "Yelp sentiment experiments compare human judgments and automatic measures.",
+      "key_findings": "Transfer intensity, content preservation, and naturalness trade off.",
+      "limitations": "Sentiment-transfer evidence does not directly validate individual-voice measures.",
+      "project_implication": "Report voice, fidelity, and readability separately; avoid one aggregate score.",
+      "verified_on": "2026-11-15",
+      "verification": {
+        "level": "Opened publisher/proceedings abstract and metadata",
+        "evidence_url": "https://aclanthology.org/N19-1049/",
+        "notes": []
+      }
+    },
+    {
+      "id": "riley2021textsettr",
+      "bibtex_key": "riley2021textsettr",
+      "title": "TextSETTR: Few-Shot Text Style Extraction and Tunable Targeted Restyling",
+      "authors": [
+        "Parker Riley",
+        "Noah Constant",
+        "Mandy Guo",
+        "Girish Kumar",
+        "David Uthus",
+        "Zarana Parekh"
+      ],
+      "authors_complete": true,
+      "year": 2021,
+      "venue": "ACL-IJCNLP 2021, Volume 1, 3786–3800",
+      "publication_status": "peer-reviewed conference paper",
+      "official_url": "https://aclanthology.org/2021.acl-long.293/",
+      "doi": "10.18653/v1/2021.acl-long.293",
+      "topics": [
+        "style transfer",
+        "few-shot"
+      ],
+      "research_question": "Can exemplars support targeted restyling without style-labeled training?",
+      "method": "T5-based style-vector extraction exploits adjacency in unlabeled text.",
+      "key_findings": "Few exemplars support changes across several tested stylistic dimensions.",
+      "limitations": "Benchmarks assess selected attributes, not complete personal identity or factual fidelity.",
+      "project_implication": "Use genre-matched exemplars and modest, explicit transfer goals.",
+      "verified_on": "2026-11-15",
+      "verification": {
+        "level": "Opened publisher/proceedings abstract and metadata",
+        "evidence_url": "https://aclanthology.org/2021.acl-long.293/",
+        "notes": []
+      }
+    },
+    {
+      "id": "lee2022coauthor",
+      "bibtex_key": "lee2022coauthor",
+      "title": "CoAuthor: Designing a Human-AI Collaborative Writing Dataset for Exploring Language Model Capabilities",
+      "authors": [
+        "Mina Lee",
+        "Percy Liang",
+        "Qian Yang"
+      ],
+      "authors_complete": true,
+      "year": 2022,
+      "venue": "CHI Conference on Human Factors in Computing Systems (CHI ’22)",
+      "publication_status": "peer-reviewed conference paper",
+      "official_url": "https://doi.org/10.1145/3491102.3502030",
+      "doi": "10.1145/3491102.3502030",
+      "topics": [
+        "co-writing",
+        "interaction"
+      ],
+      "research_question": "How can writing interactions expose language-model capabilities?",
+      "method": "Logs 1,445 creative/argumentative sessions from 63 writers with four GPT-3 instances.",
+      "key_findings": "Interaction traces support examining language, ideation, and collaboration contributions.",
+      "limitations": "Specific writers, tasks, interface, and historical model; no universal productivity estimate.",
+      "project_implication": "Preserve editable drafts and review decisions with explicit user consent.",
+      "verified_on": "2026-11-15",
+      "verification": {
+        "level": "Opened author-hosted published primary PDF",
+        "evidence_url": "https://www-cs.stanford.edu/~minalee/pdf/chi2022-coauthor.pdf",
+        "notes": []
+      }
+    },
+    {
+      "id": "salemi2024lamp",
+      "bibtex_key": "salemi2024lamp",
+      "title": "LaMP: When Large Language Models Meet Personalization",
+      "authors": [
+        "Alireza Salemi",
+        "Sheshera Mysore",
+        "Michael Bendersky",
+        "Hamed Zamani"
+      ],
+      "authors_complete": true,
+      "year": 2024,
+      "venue": "ACL 2024, Volume 1, 7370–7392",
+      "publication_status": "peer-reviewed conference paper",
+      "official_url": "https://aclanthology.org/2024.acl-long.399/",
+      "doi": "10.18653/v1/2024.acl-long.399",
+      "topics": [
+        "personalization",
+        "retrieval"
+      ],
+      "research_question": "Can profile retrieval improve personalized language tasks?",
+      "method": "Seven tasks evaluate personal-item retrieval with zero-shot and fine-tuned models.",
+      "key_findings": "Retrieval augmentation improves tested personalized classification and generation tasks.",
+      "limitations": "Task metrics do not establish authentic voice, privacy protection, or causality of every profile feature.",
+      "project_implication": "Retrieve relevant consented examples; test against no-profile and mismatched-profile baselines.",
+      "verified_on": "2026-11-15",
+      "verification": {
+        "level": "Opened publisher/proceedings abstract and metadata",
+        "evidence_url": "https://aclanthology.org/2024.acl-long.399/",
+        "notes": []
+      }
+    },
+    {
+      "id": "mitchell2023detectgpt",
+      "bibtex_key": "mitchell2023detectgpt",
+      "title": "DetectGPT: Zero-Shot Machine-Generated Text Detection using Probability Curvature",
+      "authors": [
+        "Eric Mitchell",
+        "Yoonho Lee",
+        "Alexander Khazatsky",
+        "Christopher D. Manning",
+        "Chelsea Finn"
+      ],
+      "authors_complete": true,
+      "year": 2023,
+      "venue": "Proceedings of the 40th International Conference on Machine Learning, PMLR 202, 24950–24962",
+      "publication_status": "peer-reviewed conference paper",
+      "official_url": "https://proceedings.mlr.press/v202/mitchell23a.html",
+      "doi": null,
+      "topics": [
+        "AI-text detection"
+      ],
+      "research_question": "Can probability curvature separate generated and human passages?",
+      "method": "Compares source-model log probabilities against randomly perturbed passages.",
+      "key_findings": "GPT-NeoX fake-news AUROC increases from 0.81 baseline to 0.95.",
+      "limitations": "Requires model scoring and perturbation choices; benchmark discrimination is not authorship probability.",
+      "project_implication": "Do not use likelihood diagnostics as truth labels or revision objectives.",
+      "verified_on": "2026-11-15",
+      "verification": {
+        "level": "Opened publisher/proceedings abstract and metadata",
+        "evidence_url": "https://proceedings.mlr.press/v202/mitchell23a.html",
+        "notes": []
+      }
+    },
+    {
+      "id": "bao2024fastdetectgpt",
+      "bibtex_key": "bao2024fastdetectgpt",
+      "title": "Fast-DetectGPT: Efficient Zero-Shot Detection of Machine-Generated Text via Conditional Probability Curvature",
+      "authors": [
+        "Guangsheng Bao",
+        "Yanbin Zhao",
+        "Zhiyang Teng",
+        "Linyi Yang",
+        "Yue Zhang"
+      ],
+      "authors_complete": true,
+      "year": 2024,
+      "venue": "International Conference on Learning Representations (ICLR 2024)",
+      "publication_status": "peer-reviewed conference paper",
+      "official_url": "https://proceedings.iclr.cc/paper_files/paper/2024/file/6b8c6f846c3575e1d1ad496abea28826-Paper-Conference.pdf",
+      "doi": null,
+      "topics": [
+        "AI-text detection"
+      ],
+      "research_question": "Can conditional scoring make curvature-based detection faster?",
+      "method": "Replaces passage perturbation with conditional token sampling/scoring.",
+      "key_findings": "Reports better AUROC and faster detection under tested model/domain conditions.",
+      "limitations": "Surrogate-model coverage varies across languages and domains; theoretical explanation remains incomplete.",
+      "project_implication": "Any research detector comparison needs matched models, thresholds, hardware, and language scope.",
+      "verified_on": "2026-11-15",
+      "verification": {
+        "level": "Opened official conference PDF; inspected abstract, Table 1, and limitations",
+        "evidence_url": "https://proceedings.iclr.cc/paper_files/paper/2024/file/6b8c6f846c3575e1d1ad496abea28826-Paper-Conference.pdf",
+        "notes": [
+          "The headline approximately 75% gain is (new AUROC − old AUROC)/(1 − old AUROC), not 75 percentage points of accuracy.",
+          "Reported 340× speedup uses XSum on a Tesla A100; it is not an application runtime promise."
+        ]
+      }
+    },
+    {
+      "id": "liang2023bias",
+      "bibtex_key": "liang2023bias",
+      "title": "GPT detectors are biased against non-native English writers",
+      "authors": [
+        "Weixin Liang",
+        "Mert Yuksekgonul",
+        "Yining Mao",
+        "Eric Wu",
+        "James Zou"
+      ],
+      "authors_complete": true,
+      "year": 2023,
+      "venue": "Patterns, 4(7), 100779",
+      "publication_status": "peer-reviewed journal opinion with empirical analyses",
+      "official_url": "https://doi.org/10.1016/j.patter.2023.100779",
+      "doi": "10.1016/j.patter.2023.100779",
+      "topics": [
+        "AI-text detection",
+        "fairness",
+        "nonnative English"
+      ],
+      "research_question": "Do tested detectors treat two English-writing cohorts differently?",
+      "method": "Seven detectors compare 91 TOEFL essays and 88 US school essays.",
+      "key_findings": "TOEFL essays have 61.3% average false positives in this comparison.",
+      "limitations": "Small, unmatched cohorts; no measured Indian-English subgroup or present-day detector guarantee.",
+      "project_implication": "Never infer authorship from predictability; audit language/register disparities.",
+      "verified_on": "2026-11-15",
+      "verification": {
+        "level": "Opened archived published primary article; inspected cohort and results sections",
+        "evidence_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10382961/",
+        "notes": [
+          "TOEFL essays were obtained from a Chinese forum; comparator essays were from US eighth-grade students.",
+          "Language-background attribution and genre/age/task differences limit causal interpretation.",
+          "The paper’s article type is Opinion, not a new general-population benchmark."
+        ]
+      }
+    },
+    {
+      "id": "weberwulff2023testing",
+      "bibtex_key": "weberwulff2023testing",
+      "title": "Testing of detection tools for AI-generated text",
+      "authors": [
+        "Debora Weber-Wulff",
+        "Alla Anohina-Naumeca",
+        "Sonja Bjelobaba",
+        "Tomáš Foltýnek",
+        "Jean Guerrero-Dib",
+        "Olumide Popoola",
+        "Petr Šigut",
+        "Lorna Waddington"
+      ],
+      "authors_complete": true,
+      "year": 2023,
+      "venue": "International Journal for Educational Integrity, 19, article 26",
+      "publication_status": "peer-reviewed journal article",
+      "official_url": "https://link.springer.com/article/10.1007/s40979-023-00146-z",
+      "doi": "10.1007/s40979-023-00146-z",
+      "topics": [
+        "AI-text detection",
+        "evaluation"
+      ],
+      "research_question": "How reliably did the evaluated tools classify test documents?",
+      "method": "Tests 12 public tools and two commercial systems, including transformed text.",
+      "key_findings": "Tested systems show errors; obfuscation further worsens performance.",
+      "limitations": "Historical tool versions and document set do not rank current products.",
+      "project_implication": "Require current in-scope validation before any detector claim.",
+      "verified_on": "2026-11-15",
+      "verification": {
+        "level": "Opened publisher full text and metadata",
+        "evidence_url": "https://link.springer.com/article/10.1007/s40979-023-00146-z",
+        "notes": [
+          "Publisher publication date: 25 December 2023."
+        ]
+      }
+    },
+    {
+      "id": "sadasivan2025reliable",
+      "bibtex_key": "sadasivan2025reliable",
+      "title": "Can AI-Generated Text be Reliably Detected? Stress Testing AI Text Detectors Under Various Attacks",
+      "authors": [
+        "Vinu Sankar Sadasivan",
+        "Aounon Kumar",
+        "Sriram Balasubramanian",
+        "Wenxiao Wang",
+        "Soheil Feizi"
+      ],
+      "authors_complete": true,
+      "year": 2025,
+      "venue": "Transactions on Machine Learning Research (January 2025)",
+      "publication_status": "peer-reviewed journal article",
+      "official_url": "https://openreview.net/forum?id=OOgsAZdFOt",
+      "doi": null,
+      "topics": [
+        "AI-text detection",
+        "theory",
+        "robustness"
+      ],
+      "research_question": "How do editing attacks and distribution overlap constrain detection?",
+      "method": "Stress-tests detector families; derives a total-variation bound on AUROC.",
+      "key_findings": "Paraphrasing weakens tested signals; overlapping distributions limit discrimination.",
+      "limitations": "Theory is conditional on distributions; it does not prove every detector always fails.",
+      "project_implication": "Keep process provenance and fidelity checks independent of detector scores.",
+      "verified_on": "2026-11-15",
+      "verification": {
+        "level": "Opened web-indexed accepted primary PDF and official TMLR publication listing",
+        "evidence_url": "https://openreview.net/pdf/a06fe5303ab3d0c635e565d4eae91e5ab7ac8175.pdf",
+        "notes": [
+          "Earlier 2023 arXiv versions had a shorter title. This record cites the 2025 accepted article.",
+          "Live canonical OpenReview URL displayed a browser challenge; the indexed accepted PDF text was accessible.",
+          "Official publication and complete author order verified at https://jmlr.org/tmlr/papers/."
+        ]
+      }
+    },
+    {
+      "id": "wang2024m4",
+      "bibtex_key": "wang2024m4",
+      "title": "M4: Multi-generator, Multi-domain, and Multi-lingual Black-Box Machine-Generated Text Detection",
+      "authors": [
+        "Yuxia Wang",
+        "Jonibek Mansurov",
+        "Petar Ivanov",
+        "Jinyan Su",
+        "Artem Shelmanov",
+        "Akim Tsvigun",
+        "Chenxi Whitehouse",
+        "Osama Mohammed Afzal",
+        "Tarek Mahmoud",
+        "Toru Sasaki",
+        "Thomas Arnold",
+        "Alham Fikri Aji",
+        "Nizar Habash",
+        "Iryna Gurevych",
+        "Preslav Nakov"
+      ],
+      "authors_complete": true,
+      "year": 2024,
+      "venue": "EACL 2024, Volume 1, 1369–1407",
+      "publication_status": "peer-reviewed conference paper",
+      "official_url": "https://aclanthology.org/2024.eacl-long.83/",
+      "doi": "10.18653/v1/2024.eacl-long.83",
+      "topics": [
+        "AI-text detection",
+        "multilingual",
+        "generalization"
+      ],
+      "research_question": "Do detectors generalize across generators, domains, and languages?",
+      "method": "Constructs and evaluates a multi-generator/domain/language detection corpus.",
+      "key_findings": "Unseen generators and domains cause substantial generalization difficulties.",
+      "limitations": "Benchmark coverage is finite and is not individual-language fairness validation.",
+      "project_implication": "Stratify evaluation; do not transfer English thresholds to all languages.",
+      "verified_on": "2026-11-15",
+      "verification": {
+        "level": "Opened publisher/proceedings abstract and metadata",
+        "evidence_url": "https://aclanthology.org/2024.eacl-long.83/",
+        "notes": []
+      }
+    },
+    {
+      "id": "saha2025polished",
+      "bibtex_key": "saha2025polished",
+      "title": "Almost AI, Almost Human: The Challenge of Detecting AI-Polished Writing",
+      "authors": [
+        "Shoumik Saha",
+        "Soheil Feizi"
+      ],
+      "authors_complete": true,
+      "year": 2025,
+      "venue": "Findings of the Association for Computational Linguistics: ACL 2025, 25414–25431",
+      "publication_status": "peer-reviewed conference findings paper",
+      "official_url": "https://aclanthology.org/2025.findings-acl.1303/",
+      "doi": "10.18653/v1/2025.findings-acl.1303",
+      "topics": [
+        "AI-text detection",
+        "mixed authorship"
+      ],
+      "research_question": "Can detectors distinguish degrees of AI polishing?",
+      "method": "APT-Eval evaluates twelve detectors on 15K samples with varied AI involvement.",
+      "key_findings": "Minimal polishing can trigger flags; involvement levels are poorly separated.",
+      "limitations": "Controlled polishing procedures and evaluated versions do not cover every real workflow.",
+      "project_implication": "Describe actual editing operations instead of estimating an authorship percentage.",
+      "verified_on": "2026-11-15",
+      "verification": {
+        "level": "Opened publisher/proceedings abstract and metadata",
+        "evidence_url": "https://aclanthology.org/2025.findings-acl.1303/",
+        "notes": []
+      }
+    },
+    {
+      "id": "kirk2024diversity",
+      "bibtex_key": "kirk2024diversity",
+      "title": "Understanding the Effects of RLHF on LLM Generalisation and Diversity",
+      "authors": [
+        "Robert Kirk",
+        "Ishita Mediratta",
+        "Christoforos Nalmpantis",
+        "Jelena Luketina",
+        "Eric Hambro",
+        "Edward Grefenstette",
+        "Roberta Raileanu"
+      ],
+      "authors_complete": true,
+      "year": 2024,
+      "venue": "International Conference on Learning Representations (ICLR 2024)",
+      "publication_status": "peer-reviewed conference paper",
+      "official_url": "https://proceedings.iclr.cc/paper_files/paper/2024/file/5a68d05006d5b05dd9463dd9c0219db0-Paper-Conference.pdf",
+      "doi": null,
+      "topics": [
+        "RLHF",
+        "diversity"
+      ],
+      "research_question": "How do preference-training stages affect generalization and diversity?",
+      "method": "Compares SFT, RLHF, and best-of-N on two base models and two tasks.",
+      "key_findings": "RLHF improves tested generalization while reducing several diversity measures relative to SFT.",
+      "limitations": "Automatic metrics only; limited models/tasks; no universal mechanism or DPO result.",
+      "project_implication": "Measure voice variation across prompts and users, not average fluency alone.",
+      "verified_on": "2026-11-15",
+      "verification": {
+        "level": "Opened official conference PDF; inspected abstract and Appendix A limitations",
+        "evidence_url": "https://proceedings.iclr.cc/paper_files/paper/2024/file/5a68d05006d5b05dd9463dd9c0219db0-Paper-Conference.pdf",
+        "notes": []
+      }
+    },
+    {
+      "id": "rafailov2023dpo",
+      "bibtex_key": "rafailov2023dpo",
+      "title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+      "authors": [
+        "Rafael Rafailov",
+        "Archit Sharma",
+        "Eric Mitchell",
+        "Christopher D. Manning",
+        "Stefano Ermon",
+        "Chelsea Finn"
+      ],
+      "authors_complete": true,
+      "year": 2023,
+      "venue": "Advances in Neural Information Processing Systems 36 (NeurIPS 2023)",
+      "publication_status": "peer-reviewed conference paper",
+      "official_url": "https://proceedings.nips.cc/paper_files/paper/2023/hash/a85b405ed65c6477a4fe8302b5e06ce7-Abstract-Conference.html",
+      "doi": "10.52202/075280-2338",
+      "topics": [
+        "preference optimization"
+      ],
+      "research_question": "Can preference optimization avoid a separate reward-model training loop?",
+      "method": "Reparameterizes a KL-constrained reward objective as pairwise preference classification.",
+      "key_findings": "DPO simplifies preference training and performs well on tested alignment tasks.",
+      "limitations": "Does not establish that DPO causes generic prose or preserves personal voice.",
+      "project_implication": "Treat DPO as future optional training, requiring consented pairs and evaluation.",
+      "verified_on": "2026-11-15",
+      "verification": {
+        "level": "Opened publisher/proceedings abstract and metadata",
+        "evidence_url": "https://proceedings.nips.cc/paper_files/paper/2023/hash/a85b405ed65c6477a4fe8302b5e06ce7-Abstract-Conference.html",
+        "notes": [
+          "Author order follows the opened current official NeurIPS proceedings record."
+        ]
+      }
+    },
+    {
+      "id": "sharma2024sycophancy",
+      "bibtex_key": "sharma2024sycophancy",
+      "title": "Towards Understanding Sycophancy in Language Models",
+      "authors": [
+        "Mrinank Sharma",
+        "Meg Tong",
+        "Tomasz Korbak",
+        "David Duvenaud",
+        "Amanda Askell",
+        "Samuel R. Bowman",
+        "Newton Cheng",
+        "Esin Durmus",
+        "Zac Hatfield-Dodds",
+        "Scott R. Johnston",
+        "Shauna Kravec",
+        "Timothy Maxwell",
+        "Sam McCandlish",
+        "Kamal Ndousse",
+        "Oliver Rausch",
+        "Nicholas Schiefer",
+        "Da Yan",
+        "Miranda Zhang",
+        "Ethan Perez"
+      ],
+      "authors_complete": true,
+      "year": 2024,
+      "venue": "International Conference on Learning Representations (ICLR 2024)",
+      "publication_status": "peer-reviewed conference paper",
+      "official_url": "https://proceedings.iclr.cc/paper_files/paper/2024/file/0105f7972202c1d4fb817da9f21a9663-Paper-Conference.pdf",
+      "doi": null,
+      "topics": [
+        "sycophancy",
+        "preference optimization"
+      ],
+      "research_question": "Can preference judgments favor agreement over truth?",
+      "method": "Tests five assistants on four tasks; analyzes preferences and preference-model optimization.",
+      "key_findings": "Some convincing agreement is preferred despite incorrectness; optimization effects vary by behavior.",
+      "limitations": "Does not isolate DPO or prove all preference training produces sycophancy.",
+      "project_implication": "Separate tone matching from factual agreement; protect uncertainty and corrections.",
+      "verified_on": "2026-11-15",
+      "verification": {
+        "level": "Opened official conference PDF; inspected abstract and introduction",
+        "evidence_url": "https://proceedings.iclr.cc/paper_files/paper/2024/file/0105f7972202c1d4fb817da9f21a9663-Paper-Conference.pdf",
+        "notes": []
+      }
+    },
+    {
+      "id": "kobak2025vocabulary",
+      "bibtex_key": "kobak2025vocabulary",
+      "title": "Delving into LLM-assisted writing in biomedical publications through excess vocabulary",
+      "authors": [
+        "Dmitry Kobak",
+        "Rita González-Márquez",
+        "Emőke-Ágnes Horvát",
+        "Jan Lause"
+      ],
+      "authors_complete": true,
+      "year": 2025,
+      "venue": "Science Advances, 11(27), eadt3813",
+      "publication_status": "peer-reviewed journal article",
+      "official_url": "https://doi.org/10.1126/sciadv.adt3813",
+      "doi": "10.1126/sciadv.adt3813",
+      "topics": [
+        "scientific writing",
+        "corpus analysis"
+      ],
+      "research_question": "Can excess vocabulary estimate corpus-level LLM-assisted writing?",
+      "method": "Compares 2010–2024 English PubMed abstract frequencies with extrapolated baselines.",
+      "key_findings": "Estimates a 13.5% lower bound for LLM-processed 2024 abstracts under its assumptions.",
+      "limitations": "Cannot identify individual abstracts or distinguish direct assistance from lexical diffusion.",
+      "project_implication": "Use vocabulary trends as context, never a banned-word or authorship rule.",
+      "verified_on": "2026-11-15",
+      "verification": {
+        "level": "Opened archived published primary full text; inspected abstract and interpretation limitations",
+        "evidence_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12219543/",
+        "notes": [
+          "Uses the 2025 published title and estimate, not the earlier 2024 preprint.",
+          "Country-level affiliation associations are not measurements of any individual’s linguistic ability."
+        ]
+      }
+    },
+    {
+      "id": "aguilar2020lince",
+      "bibtex_key": "aguilar2020lince",
+      "title": "LinCE: A Centralized Benchmark for Linguistic Code-switching Evaluation",
+      "authors": [
+        "Gustavo Aguilar",
+        "Sudipta Kar",
+        "Thamar Solorio"
+      ],
+      "authors_complete": true,
+      "year": 2020,
+      "venue": "Proceedings of the Twelfth Language Resources and Evaluation Conference, 1803–1813",
+      "publication_status": "peer-reviewed conference paper",
+      "official_url": "https://aclanthology.org/2020.lrec-1.223/",
+      "doi": null,
+      "topics": [
+        "multilingual",
+        "code-switching"
+      ],
+      "research_question": "How can code-switching NLP evaluation be standardized?",
+      "method": "Centralizes multiple corpora across four language pairs and four labeling tasks.",
+      "key_findings": "Includes Hindi–English and demonstrates a need for language/task-specific evaluation.",
+      "limitations": "Not a writing-assistance, Indian-English, or detector-fairness benchmark.",
+      "project_implication": "Preserve requested code-switching and evaluate it separately from monolingual prose.",
+      "verified_on": "2026-11-15",
+      "verification": {
+        "level": "Opened publisher/proceedings abstract and metadata",
+        "evidence_url": "https://aclanthology.org/2020.lrec-1.223/",
+        "notes": [
+          "The landing abstract says eleven corpora while the PDF abstract says ten; no corpus-count claim is used here."
+        ]
+      }
+    },
+    {
+      "id": "holtzman2020degeneration",
+      "bibtex_key": "holtzman2020degeneration",
+      "title": "The Curious Case of Neural Text Degeneration",
+      "authors": [
+        "Ari Holtzman",
+        "Jan Buys",
+        "Li Du",
+        "Maxwell Forbes",
+        "Yejin Choi"
+      ],
+      "authors_complete": true,
+      "year": 2020,
+      "venue": "International Conference on Learning Representations (ICLR 2020)",
+      "publication_status": "peer-reviewed conference paper",
+      "official_url": "https://openreview.net/forum?id=rygGQyrFvH",
+      "doi": null,
+      "topics": [
+        "decoding",
+        "controlled generation"
+      ],
+      "research_question": "Why can high-likelihood decoding produce poor open-ended text?",
+      "method": "Compares decoding strategies using repetition, diversity, likelihood, and human evaluation.",
+      "key_findings": "Maximization can degenerate; nucleus sampling improves the tested quality/diversity tradeoff.",
+      "limitations": "Historical models and open-ended tasks; no universal best setting for factual rewriting.",
+      "project_implication": "Log decoding settings and compare outputs; randomness is not a fidelity guarantee.",
+      "verified_on": "2026-11-15",
+      "verification": {
+        "level": "Opened institutional published primary PDF; inspected abstract and task distinction",
+        "evidence_url": "https://pubs.cs.uct.ac.za/1407/1/the_curious_case_of_neural_text_degeneration.pdf",
+        "notes": [
+          "Canonical OpenReview page displayed a browser challenge; institutional PDF states publication at ICLR 2020."
+        ]
+      }
+    },
+    {
+      "id": "zheng2023judge",
+      "bibtex_key": "zheng2023judge",
+      "title": "Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena",
+      "authors": [
+        "Lianmin Zheng",
+        "Wei-Lin Chiang",
+        "Ying Sheng",
+        "Siyuan Zhuang",
+        "Zhanghao Wu",
+        "Yonghao Zhuang",
+        "Zi Lin",
+        "Zhuohan Li",
+        "Dacheng Li",
+        "Eric P. Xing",
+        "Hao Zhang",
+        "Joseph E. Gonzalez",
+        "Ion Stoica"
+      ],
+      "authors_complete": true,
+      "year": 2023,
+      "venue": "Advances in Neural Information Processing Systems 36 (NeurIPS 2023), Datasets and Benchmarks Track",
+      "publication_status": "peer-reviewed conference paper",
+      "official_url": "https://papers.nips.cc/paper_files/paper/2023/hash/91f18a1287b398d378ef22505bf41832-Abstract-Datasets_and_Benchmarks.html",
+      "doi": "10.52202/075280-2020",
+      "topics": [
+        "evaluation",
+        "LLM judges"
+      ],
+      "research_question": "Can strong models approximate human answer preferences?",
+      "method": "Introduces MT-Bench/Arena and compares model judgments with human preferences.",
+      "key_findings": "Strong agreement coexists with position, verbosity, self-enhancement, and reasoning biases.",
+      "limitations": "General answer preferences do not validate personal-voice or factual judgments.",
+      "project_implication": "Blind and randomize comparisons; retain author review and independent fidelity checks.",
+      "verified_on": "2026-11-15",
+      "verification": {
+        "level": "Opened publisher/proceedings abstract and metadata",
+        "evidence_url": "https://papers.nips.cc/paper_files/paper/2023/hash/91f18a1287b398d378ef22505bf41832-Abstract-Datasets_and_Benchmarks.html",
+        "notes": []
+      }
+    }
+  ]
+}

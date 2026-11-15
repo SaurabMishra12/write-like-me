@@ -1,0 +1,13 @@
+{
+  "archive": "/home/saurab/Documents/write like me/write-like-me/dist/write-like-me.zip",
+  "sha256": "490beab83ce17e01826dc865d0ee8eec053a6d2d6a82a175f0bf4f5c375ff488",
+  "members": 88,
+  "member_hashes_verified": 87,
+  "deterministic_second_build_identical": true,
+  "private_directories_and_selected_raw_sources_absent": true,
+  "extracted_test_output": "........................................................................ [ 74%]\n.........................                                                [100%]\n97 passed in 1.72s",
+  "extracted_skill_validator": "Skill is valid!",
+  "public_evaluation_replay": "three JSON artifacts reproduced exactly",
+  "cross_platform_runtime_verified": false,
+  "human_voice_verified": false
+}

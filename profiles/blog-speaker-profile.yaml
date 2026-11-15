@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "genres": [
+    "blog",
+    "speaking"
+  ],
+  "personal_confidence": "low for finished prose; informal request evidence only",
+  "blog": [
+    "Concrete observation or failure first",
+    "One mechanism, example or calculation before generalization",
+    "Use first person only for supplied experiences"
+  ],
+  "speaking": [
+    "Anchor explanation to the actual slide or visible object",
+    "One question when it advances the explanation",
+    "Read aloud; leave space at conceptual turns"
+  ],
+  "fallback": "Feynman, Karpathy, Sagan and Kalam craft, without impersonation"
+}
+

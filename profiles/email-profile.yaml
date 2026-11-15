@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "genre": "email",
+  "personal_confidence": "low; no verified self-written outreach email",
+  "required_inputs": [
+    "recipient and purpose",
+    "evidence of real research overlap",
+    "concrete ask",
+    "actual reading/experience status"
+  ],
+  "craft": [
+    "Lead with the reason for contact and a relevant specific connection.",
+    "Keep only the background the recipient needs to assess the ask.",
+    "Use a respectful salutation and clear request; a supplied Indian English expression may remain."
+  ],
+  "avoid": [
+    "flattery",
+    "fabricated reading",
+    "invented personal connection",
+    "arbitrary word limit"
+  ],
+  "fallback": "User-stated no-flattery preference and reader-oriented clarity; not a learned email voice"
+}
+

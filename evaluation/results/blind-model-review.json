@@ -1,0 +1,1070 @@
+{
+  "schema_version": 1,
+  "review_status": "completed_model_rubric_review_key_unseen",
+  "review_date": "2026-11-15",
+  "judge_provenance": {
+    "judge": "same-model-family judge in a separate reviewing context",
+    "exact_backend_revision": "not available",
+    "human_judgment": false,
+    "identity_key_seen_at_review_time": false,
+    "generation_record_seen_at_review_time": false,
+    "authorized_inputs_read": [
+      "evaluation/results/blind-packet.json",
+      "evaluation/benchmark.md"
+    ],
+    "prior_context": "Reviewer previously prepared canon research artifacts; no generator outputs, method key or private personal source data were accessed for this review.",
+    "scope": "Model rubric judgment, not factual verification, personal-voice proof, authorship classification or measured reader benefit."
+  },
+  "scoring_policy": {
+    "allowed_scores": [
+      0,
+      1,
+      2,
+      null
+    ],
+    "dimension_count": 8,
+    "personal_voice_similarity": "null for all 21 candidates; no genuine personal A in these tasks",
+    "canon_craft_fit": "Separate editorial interpretation, never substituted for personal voice similarity",
+    "edit_restraint": "null on six drafting tasks; scored only on the informal task whose full original is supplied",
+    "argument_quality": "null on usage-reference and simple-request tasks, where no substantive argument is available",
+    "factual_integrity": "Checked against supplied fixture context only; unsupported assertions are hard failures under this protocol. This does not independently establish real-world truth or falsity.",
+    "aggregate_quality_score": false,
+    "aggregate_human_score": false,
+    "authorship_inference": false,
+    "length_based_ranking": false,
+    "output_rewrites_performed": false
+  },
+  "reviews": [
+    {
+      "task_id": "syn-email",
+      "candidate_label": "candidate-1",
+      "dimensions": {
+        "voice_and_canon_similarity": {
+          "score": null,
+          "note": "No genuine personal original A is available for this task; personal voice similarity is unassessed."
+        },
+        "meaning_preservation": {
+          "score": 2,
+          "note": "Asks for the requested brief project discussion and does not imply reading the full paper."
+        },
+        "factual_integrity": {
+          "score": 2,
+          "note": "Student status, toy graph-search project, abstract-only reading and a short discussion request are retained; no names or achievements added."
+        },
+        "naturalness": {
+          "score": 1,
+          "note": "The opportunity-to-discuss sentence and next availability question repeat the same request."
+        },
+        "clarity": {
+          "score": 2,
+          "note": "The project and requested response are clear."
+        },
+        "argument_quality": {
+          "score": 2,
+          "note": "The request is grounded in the project and relevant abstract; no larger claim is made."
+        },
+        "genre_suitability": {
+          "score": 2,
+          "note": "Concise professor outreach with salutation and sign-off; the placeholder does not invent a name."
+        },
+        "edit_restraint": {
+          "score": null,
+          "note": "Drafting task; no original prose is available as an edit-distance or restraint baseline."
+        }
+      },
+      "canon_craft_fit": {
+        "score": 1,
+        "note": "The duplicated request adds avoidable repetition.",
+        "status": "editorial interpretation, not personal voice or author-identity evidence"
+      },
+      "hard_failure_flags": [],
+      "confidence": "moderate; model rubric judgment from supplied packet only"
+    },
+    {
+      "task_id": "syn-email",
+      "candidate_label": "candidate-2",
+      "dimensions": {
+        "voice_and_canon_similarity": {
+          "score": null,
+          "note": "No genuine personal original A is available for this task; personal voice similarity is unassessed."
+        },
+        "meaning_preservation": {
+          "score": 2,
+          "note": "Asks for the requested brief project discussion and does not imply reading the full paper."
+        },
+        "factual_integrity": {
+          "score": 2,
+          "note": "Student status, toy graph-search project, abstract-only reading and a short discussion request are retained; no names or achievements added."
+        },
+        "naturalness": {
+          "score": 2,
+          "note": "The request is direct and conventionally polite without a forced personal connection."
+        },
+        "clarity": {
+          "score": 2,
+          "note": "The project and requested response are clear."
+        },
+        "argument_quality": {
+          "score": 2,
+          "note": "The request is grounded in the project and relevant abstract; no larger claim is made."
+        },
+        "genre_suitability": {
+          "score": 2,
+          "note": "Concise professor outreach with salutation and sign-off; the placeholder does not invent a name."
+        },
+        "edit_restraint": {
+          "score": null,
+          "note": "Drafting task; no original prose is available as an edit-distance or restraint baseline."
+        }
+      },
+      "canon_craft_fit": {
+        "score": 2,
+        "note": "Concrete project context leads directly to a scoped request.",
+        "status": "editorial interpretation, not personal voice or author-identity evidence"
+      },
+      "hard_failure_flags": [],
+      "confidence": "moderate; model rubric judgment from supplied packet only"
+    },
+    {
+      "task_id": "syn-email",
+      "candidate_label": "candidate-3",
+      "dimensions": {
+        "voice_and_canon_similarity": {
+          "score": null,
+          "note": "No genuine personal original A is available for this task; personal voice similarity is unassessed."
+        },
+        "meaning_preservation": {
+          "score": 2,
+          "note": "Asks for the requested brief project discussion and does not imply reading the full paper."
+        },
+        "factual_integrity": {
+          "score": 2,
+          "note": "Student status, toy graph-search project, abstract-only reading and a short discussion request are retained; no names or achievements added."
+        },
+        "naturalness": {
+          "score": 2,
+          "note": "The request is direct and conventionally polite without a forced personal connection."
+        },
+        "clarity": {
+          "score": 2,
+          "note": "The project and requested response are clear."
+        },
+        "argument_quality": {
+          "score": 2,
+          "note": "The request is grounded in the project and relevant abstract; no larger claim is made."
+        },
+        "genre_suitability": {
+          "score": 2,
+          "note": "Concise professor outreach with salutation and sign-off; the placeholder does not invent a name."
+        },
+        "edit_restraint": {
+          "score": null,
+          "note": "Drafting task; no original prose is available as an edit-distance or restraint baseline."
+        }
+      },
+      "canon_craft_fit": {
+        "score": 2,
+        "note": "Concrete project context leads directly to a scoped request.",
+        "status": "editorial interpretation, not personal voice or author-identity evidence"
+      },
+      "hard_failure_flags": [],
+      "confidence": "moderate; model rubric judgment from supplied packet only"
+    },
+    {
+      "task_id": "syn-academic",
+      "candidate_label": "candidate-1",
+      "dimensions": {
+        "voice_and_canon_similarity": {
+          "score": null,
+          "note": "No genuine personal original A is available for this task; personal voice similarity is unassessed."
+        },
+        "meaning_preservation": {
+          "score": 2,
+          "note": "Retains the constructed setting, equal observed accuracy and explicit limit on accuracy-improvement inference."
+        },
+        "factual_integrity": {
+          "score": 2,
+          "note": "A=12 messages, B=20, both 80% on 50 examples, and the exact citation marker are preserved."
+        },
+        "naturalness": {
+          "score": 2,
+          "note": "The factual comparison and limitation read coherently without promotional language."
+        },
+        "clarity": {
+          "score": 2,
+          "note": "The message-count comparison is distinct from the equal accuracy observation."
+        },
+        "argument_quality": {
+          "score": 2,
+          "note": "The only positive inference is fewer messages in this example; no accuracy advantage or general result is inferred."
+        },
+        "genre_suitability": {
+          "score": 2,
+          "note": "A short results paragraph with a scoped interpretation and citation marker fits the task."
+        },
+        "edit_restraint": {
+          "score": null,
+          "note": "Drafting task; no original prose is available as an edit-distance or restraint baseline."
+        }
+      },
+      "canon_craft_fit": {
+        "score": 2,
+        "note": "States an observation and bounds the interpretation instead of enlarging its significance.",
+        "status": "editorial interpretation, not personal voice or author-identity evidence"
+      },
+      "hard_failure_flags": [],
+      "confidence": "moderate; model rubric judgment from supplied packet only"
+    },
+    {
+      "task_id": "syn-academic",
+      "candidate_label": "candidate-2",
+      "dimensions": {
+        "voice_and_canon_similarity": {
+          "score": null,
+          "note": "No genuine personal original A is available for this task; personal voice similarity is unassessed."
+        },
+        "meaning_preservation": {
+          "score": 2,
+          "note": "Retains the constructed setting, equal observed accuracy and explicit limit on accuracy-improvement inference."
+        },
+        "factual_integrity": {
+          "score": 2,
+          "note": "A=12 messages, B=20, both 80% on 50 examples, and the exact citation marker are preserved."
+        },
+        "naturalness": {
+          "score": 2,
+          "note": "The factual comparison and limitation read coherently without promotional language."
+        },
+        "clarity": {
+          "score": 2,
+          "note": "The message-count comparison is distinct from the equal accuracy observation."
+        },
+        "argument_quality": {
+          "score": 2,
+          "note": "The only positive inference is fewer messages in this example; no accuracy advantage or general result is inferred."
+        },
+        "genre_suitability": {
+          "score": 2,
+          "note": "A short results paragraph with a scoped interpretation and citation marker fits the task."
+        },
+        "edit_restraint": {
+          "score": null,
+          "note": "Drafting task; no original prose is available as an edit-distance or restraint baseline."
+        }
+      },
+      "canon_craft_fit": {
+        "score": 2,
+        "note": "States an observation and bounds the interpretation instead of enlarging its significance.",
+        "status": "editorial interpretation, not personal voice or author-identity evidence"
+      },
+      "hard_failure_flags": [],
+      "confidence": "moderate; model rubric judgment from supplied packet only"
+    },
+    {
+      "task_id": "syn-academic",
+      "candidate_label": "candidate-3",
+      "dimensions": {
+        "voice_and_canon_similarity": {
+          "score": null,
+          "note": "No genuine personal original A is available for this task; personal voice similarity is unassessed."
+        },
+        "meaning_preservation": {
+          "score": 2,
+          "note": "Retains the constructed setting, equal observed accuracy and explicit limit on accuracy-improvement inference."
+        },
+        "factual_integrity": {
+          "score": 2,
+          "note": "A=12 messages, B=20, both 80% on 50 examples, and the exact citation marker are preserved."
+        },
+        "naturalness": {
+          "score": 2,
+          "note": "The factual comparison and limitation read coherently without promotional language."
+        },
+        "clarity": {
+          "score": 2,
+          "note": "The message-count comparison is distinct from the equal accuracy observation."
+        },
+        "argument_quality": {
+          "score": 2,
+          "note": "The only positive inference is fewer messages in this example; no accuracy advantage or general result is inferred."
+        },
+        "genre_suitability": {
+          "score": 2,
+          "note": "A short results paragraph with a scoped interpretation and citation marker fits the task."
+        },
+        "edit_restraint": {
+          "score": null,
+          "note": "Drafting task; no original prose is available as an edit-distance or restraint baseline."
+        }
+      },
+      "canon_craft_fit": {
+        "score": 2,
+        "note": "States an observation and bounds the interpretation instead of enlarging its significance.",
+        "status": "editorial interpretation, not personal voice or author-identity evidence"
+      },
+      "hard_failure_flags": [],
+      "confidence": "moderate; model rubric judgment from supplied packet only"
+    },
+    {
+      "task_id": "syn-blog",
+      "candidate_label": "candidate-1",
+      "dimensions": {
+        "voice_and_canon_similarity": {
+          "score": null,
+          "note": "No genuine personal original A is available for this task; personal voice similarity is unassessed."
+        },
+        "meaning_preservation": {
+          "score": 2,
+          "note": "Explains retention of old state and incorporation of new input, then gives the concrete calculation and recurrence."
+        },
+        "factual_integrity": {
+          "score": 2,
+          "note": "Weights 0.8/0.2, state 10, input 20 and update 12 are consistent; the example remains illustrative rather than measured."
+        },
+        "naturalness": {
+          "score": 2,
+          "note": "The explanation moves naturally from intuition to a worked step and formal rule; no personal experience is invented."
+        },
+        "clarity": {
+          "score": 2,
+          "note": "The numerical calculation makes the update recoverable; all three symbols are also explicitly defined."
+        },
+        "argument_quality": {
+          "score": 2,
+          "note": "The calculation demonstrates the stated combination rule; no unsupported performance or general capability follows."
+        },
+        "genre_suitability": {
+          "score": 2,
+          "note": "Follows the requested intuition, concrete step, equation order for a short explanation."
+        },
+        "edit_restraint": {
+          "score": null,
+          "note": "Drafting task; no original prose is available as an edit-distance or restraint baseline."
+        }
+      },
+      "canon_craft_fit": {
+        "score": 2,
+        "note": "A small inspectable example supports the mechanism and preserves the illustration limit.",
+        "status": "editorial interpretation, not personal voice or author-identity evidence"
+      },
+      "hard_failure_flags": [],
+      "confidence": "moderate; model rubric judgment from supplied packet only"
+    },
+    {
+      "task_id": "syn-blog",
+      "candidate_label": "candidate-2",
+      "dimensions": {
+        "voice_and_canon_similarity": {
+          "score": null,
+          "note": "No genuine personal original A is available for this task; personal voice similarity is unassessed."
+        },
+        "meaning_preservation": {
+          "score": 2,
+          "note": "Explains retention of old state and incorporation of new input, then gives the concrete calculation and recurrence."
+        },
+        "factual_integrity": {
+          "score": 2,
+          "note": "Weights 0.8/0.2, state 10, input 20 and update 12 are consistent; the example remains illustrative rather than measured."
+        },
+        "naturalness": {
+          "score": 2,
+          "note": "The explanation moves naturally from intuition to a worked step and formal rule; no personal experience is invented."
+        },
+        "clarity": {
+          "score": 2,
+          "note": "The previous-state/new-input description supplies the referents needed to follow the numerical update and equation."
+        },
+        "argument_quality": {
+          "score": 2,
+          "note": "The calculation demonstrates the stated combination rule; no unsupported performance or general capability follows."
+        },
+        "genre_suitability": {
+          "score": 2,
+          "note": "Follows the requested intuition, concrete step, equation order for a short explanation."
+        },
+        "edit_restraint": {
+          "score": null,
+          "note": "Drafting task; no original prose is available as an edit-distance or restraint baseline."
+        }
+      },
+      "canon_craft_fit": {
+        "score": 2,
+        "note": "A small inspectable example supports the mechanism and preserves the illustration limit.",
+        "status": "editorial interpretation, not personal voice or author-identity evidence"
+      },
+      "hard_failure_flags": [],
+      "confidence": "moderate; model rubric judgment from supplied packet only"
+    },
+    {
+      "task_id": "syn-blog",
+      "candidate_label": "candidate-3",
+      "dimensions": {
+        "voice_and_canon_similarity": {
+          "score": null,
+          "note": "No genuine personal original A is available for this task; personal voice similarity is unassessed."
+        },
+        "meaning_preservation": {
+          "score": 2,
+          "note": "Explains retention of old state and incorporation of new input, then gives the concrete calculation and recurrence."
+        },
+        "factual_integrity": {
+          "score": 2,
+          "note": "Weights 0.8/0.2, state 10, input 20 and update 12 are consistent; the example remains illustrative rather than measured."
+        },
+        "naturalness": {
+          "score": 2,
+          "note": "The explanation moves naturally from intuition to a worked step and formal rule; no personal experience is invented."
+        },
+        "clarity": {
+          "score": 2,
+          "note": "The previous-state/new-input description supplies the referents needed to follow the numerical update and equation."
+        },
+        "argument_quality": {
+          "score": 2,
+          "note": "The calculation demonstrates the stated combination rule; no unsupported performance or general capability follows."
+        },
+        "genre_suitability": {
+          "score": 2,
+          "note": "Follows the requested intuition, concrete step, equation order for a short explanation."
+        },
+        "edit_restraint": {
+          "score": null,
+          "note": "Drafting task; no original prose is available as an edit-distance or restraint baseline."
+        }
+      },
+      "canon_craft_fit": {
+        "score": 2,
+        "note": "A small inspectable example supports the mechanism and preserves the illustration limit.",
+        "status": "editorial interpretation, not personal voice or author-identity evidence"
+      },
+      "hard_failure_flags": [],
+      "confidence": "moderate; model rubric judgment from supplied packet only"
+    },
+    {
+      "task_id": "syn-speaking",
+      "candidate_label": "candidate-1",
+      "dimensions": {
+        "voice_and_canon_similarity": {
+          "score": null,
+          "note": "No genuine personal original A is available for this task; personal voice similarity is unassessed."
+        },
+        "meaning_preservation": {
+          "score": 2,
+          "note": "Describes equal measured accuracy and retains the limits on gain and causality."
+        },
+        "factual_integrity": {
+          "score": 2,
+          "note": "Baseline is left at 60%; Variant is right at 60%; equal bar heights are correctly described."
+        },
+        "naturalness": {
+          "score": 2,
+          "note": "Short clauses and explicit left/right orientation are usable aloud."
+        },
+        "clarity": {
+          "score": 2,
+          "note": "The listener can locate each bar and understand their equality without a missing comparison."
+        },
+        "argument_quality": {
+          "score": 2,
+          "note": "The equal measured values support the equality statement; no gain or causal mechanism is inferred."
+        },
+        "genre_suitability": {
+          "score": 2,
+          "note": "Brief figure-specific speaking notes; no unrelated background is added."
+        },
+        "edit_restraint": {
+          "score": null,
+          "note": "Drafting task; no original prose is available as an edit-distance or restraint baseline."
+        }
+      },
+      "canon_craft_fit": {
+        "score": 2,
+        "note": "Directs attention to concrete visual evidence before stating the limited inference.",
+        "status": "editorial interpretation, not personal voice or author-identity evidence"
+      },
+      "hard_failure_flags": [],
+      "confidence": "moderate; model rubric judgment from supplied packet only"
+    },
+    {
+      "task_id": "syn-speaking",
+      "candidate_label": "candidate-2",
+      "dimensions": {
+        "voice_and_canon_similarity": {
+          "score": null,
+          "note": "No genuine personal original A is available for this task; personal voice similarity is unassessed."
+        },
+        "meaning_preservation": {
+          "score": 2,
+          "note": "Describes equal measured accuracy and retains the limits on gain and causality."
+        },
+        "factual_integrity": {
+          "score": 2,
+          "note": "Baseline is left at 60%; Variant is right at 60%; equal bar heights are correctly described."
+        },
+        "naturalness": {
+          "score": 2,
+          "note": "Short clauses and explicit left/right orientation are usable aloud."
+        },
+        "clarity": {
+          "score": 2,
+          "note": "The listener can locate each bar and understand their equality without a missing comparison."
+        },
+        "argument_quality": {
+          "score": 2,
+          "note": "The equal measured values support the equality statement; no gain or causal mechanism is inferred."
+        },
+        "genre_suitability": {
+          "score": 2,
+          "note": "Brief figure-specific speaking notes; no unrelated background is added."
+        },
+        "edit_restraint": {
+          "score": null,
+          "note": "Drafting task; no original prose is available as an edit-distance or restraint baseline."
+        }
+      },
+      "canon_craft_fit": {
+        "score": 2,
+        "note": "Directs attention to concrete visual evidence before stating the limited inference.",
+        "status": "editorial interpretation, not personal voice or author-identity evidence"
+      },
+      "hard_failure_flags": [],
+      "confidence": "moderate; model rubric judgment from supplied packet only"
+    },
+    {
+      "task_id": "syn-speaking",
+      "candidate_label": "candidate-3",
+      "dimensions": {
+        "voice_and_canon_similarity": {
+          "score": null,
+          "note": "No genuine personal original A is available for this task; personal voice similarity is unassessed."
+        },
+        "meaning_preservation": {
+          "score": 2,
+          "note": "Describes equal measured accuracy and retains the limits on gain and causality."
+        },
+        "factual_integrity": {
+          "score": 2,
+          "note": "Baseline is left at 60%; Variant is right at 60%; equal bar heights are correctly described."
+        },
+        "naturalness": {
+          "score": 2,
+          "note": "Short clauses and explicit left/right orientation are usable aloud."
+        },
+        "clarity": {
+          "score": 2,
+          "note": "The listener can locate each bar and understand their equality without a missing comparison."
+        },
+        "argument_quality": {
+          "score": 2,
+          "note": "The equal measured values support the equality statement; no gain or causal mechanism is inferred."
+        },
+        "genre_suitability": {
+          "score": 2,
+          "note": "Brief figure-specific speaking notes; no unrelated background is added."
+        },
+        "edit_restraint": {
+          "score": null,
+          "note": "Drafting task; no original prose is available as an edit-distance or restraint baseline."
+        }
+      },
+      "canon_craft_fit": {
+        "score": 2,
+        "note": "Directs attention to concrete visual evidence before stating the limited inference.",
+        "status": "editorial interpretation, not personal voice or author-identity evidence"
+      },
+      "hard_failure_flags": [],
+      "confidence": "moderate; model rubric judgment from supplied packet only"
+    },
+    {
+      "task_id": "syn-technical",
+      "candidate_label": "candidate-1",
+      "dimensions": {
+        "voice_and_canon_similarity": {
+          "score": null,
+          "note": "No genuine personal original A is available for this task; personal voice similarity is unassessed."
+        },
+        "meaning_preservation": {
+          "score": 2,
+          "note": "Retains the documented read/write behavior and empty-input error."
+        },
+        "factual_integrity": {
+          "score": 2,
+          "note": "Executable text is exact; local-file input, JSON-summary output and empty-input error are retained with no execution or performance claim."
+        },
+        "naturalness": {
+          "score": 2,
+          "note": "The brief usage description reads naturally as command documentation."
+        },
+        "clarity": {
+          "score": 2,
+          "note": "The command, output type and empty-input behavior are easy to locate."
+        },
+        "argument_quality": {
+          "score": null,
+          "note": "This is a usage reference rather than an argumentative task; no argument-quality score is needed."
+        },
+        "genre_suitability": {
+          "score": 2,
+          "note": "A compact usage reference states the supplied behavior without inventing unspecified flags or file paths."
+        },
+        "edit_restraint": {
+          "score": null,
+          "note": "Drafting task; no original prose is available as an edit-distance or restraint baseline."
+        }
+      },
+      "canon_craft_fit": {
+        "score": 2,
+        "note": "Uses exact executable text and a narrowly scoped behavior description.",
+        "status": "editorial interpretation, not personal voice or author-identity evidence"
+      },
+      "hard_failure_flags": [],
+      "confidence": "moderate; model rubric judgment from supplied packet only"
+    },
+    {
+      "task_id": "syn-technical",
+      "candidate_label": "candidate-2",
+      "dimensions": {
+        "voice_and_canon_similarity": {
+          "score": null,
+          "note": "No genuine personal original A is available for this task; personal voice similarity is unassessed."
+        },
+        "meaning_preservation": {
+          "score": 2,
+          "note": "Retains the documented read/write behavior and empty-input error."
+        },
+        "factual_integrity": {
+          "score": 0,
+          "note": "The exact command and behavior are preserved, but the added assertion that it has not been run for this documentation is not established by the supplied ledger. This is an unsupported negative provenance claim, not proof that it is false."
+        },
+        "naturalness": {
+          "score": 2,
+          "note": "The command description is concise and conventional; the execution-status sentence is readable even though its support is unestablished."
+        },
+        "clarity": {
+          "score": 2,
+          "note": "The command, output type and empty-input behavior are easy to locate."
+        },
+        "argument_quality": {
+          "score": null,
+          "note": "This is a usage reference rather than an argumentative task; no argument-quality score is needed."
+        },
+        "genre_suitability": {
+          "score": 2,
+          "note": "Concise command documentation with the required error behavior; the extra execution sentence is unnecessary but the format remains suitable."
+        },
+        "edit_restraint": {
+          "score": null,
+          "note": "Drafting task; no original prose is available as an edit-distance or restraint baseline."
+        }
+      },
+      "canon_craft_fit": {
+        "score": 1,
+        "note": "Adds a provenance assertion beyond the supplied evidence.",
+        "status": "editorial interpretation, not personal voice or author-identity evidence"
+      },
+      "hard_failure_flags": [
+        {
+          "type": "unsupported_provenance_assertion",
+          "note": "The packet says not to claim execution; it does not supply an affirmative record establishing non-execution. Hard-failure status follows the benchmark’s supplied-facts-only rule and should be reviewed as an interpretive judgment."
+        }
+      ],
+      "confidence": "moderate; model rubric judgment from supplied packet only"
+    },
+    {
+      "task_id": "syn-technical",
+      "candidate_label": "candidate-3",
+      "dimensions": {
+        "voice_and_canon_similarity": {
+          "score": null,
+          "note": "No genuine personal original A is available for this task; personal voice similarity is unassessed."
+        },
+        "meaning_preservation": {
+          "score": 2,
+          "note": "Retains the documented read/write behavior and empty-input error."
+        },
+        "factual_integrity": {
+          "score": 2,
+          "note": "Executable text is exact; local-file input, JSON-summary output and empty-input error are retained with no execution or performance claim."
+        },
+        "naturalness": {
+          "score": 2,
+          "note": "The brief usage description reads naturally as command documentation."
+        },
+        "clarity": {
+          "score": 2,
+          "note": "The command, output type and empty-input behavior are easy to locate."
+        },
+        "argument_quality": {
+          "score": null,
+          "note": "This is a usage reference rather than an argumentative task; no argument-quality score is needed."
+        },
+        "genre_suitability": {
+          "score": 2,
+          "note": "A compact usage reference states the supplied behavior without inventing unspecified flags or file paths."
+        },
+        "edit_restraint": {
+          "score": null,
+          "note": "Drafting task; no original prose is available as an edit-distance or restraint baseline."
+        }
+      },
+      "canon_craft_fit": {
+        "score": 2,
+        "note": "Uses exact executable text and a narrowly scoped behavior description.",
+        "status": "editorial interpretation, not personal voice or author-identity evidence"
+      },
+      "hard_failure_flags": [],
+      "confidence": "moderate; model rubric judgment from supplied packet only"
+    },
+    {
+      "task_id": "syn-linkedin",
+      "candidate_label": "candidate-1",
+      "dimensions": {
+        "voice_and_canon_similarity": {
+          "score": null,
+          "note": "No genuine personal original A is available for this task; personal voice similarity is unassessed."
+        },
+        "meaning_preservation": {
+          "score": 1,
+          "note": "Retains the test/error/correction/retest sequence, but drops the explicit constructed-scenario context."
+        },
+        "factual_integrity": {
+          "score": 0,
+          "note": "Presents a constructed event as an unqualified first-person experience. The ledger supports that experience only within the fixture, so this omission risks asserting an actual achievement."
+        },
+        "naturalness": {
+          "score": 2,
+          "note": "The short chronological account reads coherently without ornamental narrative."
+        },
+        "clarity": {
+          "score": 2,
+          "note": "The parsing error, correction and future retest are clear."
+        },
+        "argument_quality": {
+          "score": 2,
+          "note": "Reports a bounded sequence without an unsupported broader success claim; factual scenario qualification is assessed separately."
+        },
+        "genre_suitability": {
+          "score": 2,
+          "note": "A restrained professional update; no inflated significance or fabricated emotion."
+        },
+        "edit_restraint": {
+          "score": null,
+          "note": "Drafting task; no original prose is available as an edit-distance or restraint baseline."
+        }
+      },
+      "canon_craft_fit": {
+        "score": 1,
+        "note": "The prose is economical, but its scope qualifier is lost.",
+        "status": "editorial interpretation, not personal voice or author-identity evidence"
+      },
+      "hard_failure_flags": [
+        {
+          "type": "constructed_context_omitted",
+          "note": "Treating this as a factual failure depends on requiring the published text itself to preserve fixture status. The task supplies that status explicitly, and this review uses that stricter preservation reading."
+        }
+      ],
+      "confidence": "moderate; model rubric judgment from supplied packet only"
+    },
+    {
+      "task_id": "syn-linkedin",
+      "candidate_label": "candidate-2",
+      "dimensions": {
+        "voice_and_canon_similarity": {
+          "score": null,
+          "note": "No genuine personal original A is available for this task; personal voice similarity is unassessed."
+        },
+        "meaning_preservation": {
+          "score": 2,
+          "note": "Retains the constructed scenario and the limited sequence of testing, error discovery, correction and planned retest."
+        },
+        "factual_integrity": {
+          "score": 2,
+          "note": "Keeps the scenario qualified; no deployment, customer, accuracy, leadership or emotional claim is added."
+        },
+        "naturalness": {
+          "score": 2,
+          "note": "The short chronological account reads coherently without ornamental narrative."
+        },
+        "clarity": {
+          "score": 2,
+          "note": "The parsing error, correction and future retest are clear."
+        },
+        "argument_quality": {
+          "score": 2,
+          "note": "Reports a bounded sequence without an unsupported broader success claim; factual scenario qualification is assessed separately."
+        },
+        "genre_suitability": {
+          "score": 2,
+          "note": "A restrained professional update; no inflated significance or fabricated emotion."
+        },
+        "edit_restraint": {
+          "score": null,
+          "note": "Drafting task; no original prose is available as an edit-distance or restraint baseline."
+        }
+      },
+      "canon_craft_fit": {
+        "score": 2,
+        "note": "Concrete activity and next action remain bounded by the scenario.",
+        "status": "editorial interpretation, not personal voice or author-identity evidence"
+      },
+      "hard_failure_flags": [],
+      "confidence": "moderate; model rubric judgment from supplied packet only"
+    },
+    {
+      "task_id": "syn-linkedin",
+      "candidate_label": "candidate-3",
+      "dimensions": {
+        "voice_and_canon_similarity": {
+          "score": null,
+          "note": "No genuine personal original A is available for this task; personal voice similarity is unassessed."
+        },
+        "meaning_preservation": {
+          "score": 2,
+          "note": "Retains the constructed scenario and the limited sequence of testing, error discovery, correction and planned retest."
+        },
+        "factual_integrity": {
+          "score": 2,
+          "note": "Keeps the scenario qualified; no deployment, customer, accuracy, leadership or emotional claim is added."
+        },
+        "naturalness": {
+          "score": 2,
+          "note": "The short chronological account reads coherently without ornamental narrative."
+        },
+        "clarity": {
+          "score": 2,
+          "note": "The parsing error, correction and future retest are clear."
+        },
+        "argument_quality": {
+          "score": 2,
+          "note": "Reports a bounded sequence without an unsupported broader success claim; factual scenario qualification is assessed separately."
+        },
+        "genre_suitability": {
+          "score": 2,
+          "note": "A restrained professional update; no inflated significance or fabricated emotion."
+        },
+        "edit_restraint": {
+          "score": null,
+          "note": "Drafting task; no original prose is available as an edit-distance or restraint baseline."
+        }
+      },
+      "canon_craft_fit": {
+        "score": 2,
+        "note": "Concrete activity and next action remain bounded by the scenario.",
+        "status": "editorial interpretation, not personal voice or author-identity evidence"
+      },
+      "hard_failure_flags": [],
+      "confidence": "moderate; model rubric judgment from supplied packet only"
+    },
+    {
+      "task_id": "syn-informal",
+      "candidate_label": "candidate-1",
+      "dimensions": {
+        "voice_and_canon_similarity": {
+          "score": null,
+          "note": "No genuine personal original A is available for this task; personal voice similarity is unassessed."
+        },
+        "meaning_preservation": {
+          "score": 2,
+          "note": "Exactly preserves the request for one more explanation."
+        },
+        "factual_integrity": {
+          "score": 2,
+          "note": "No factual, referential or interpersonal content is added to the supplied complete original."
+        },
+        "naturalness": {
+          "score": 2,
+          "note": "The original is an ordinary, natural request and remains unchanged."
+        },
+        "clarity": {
+          "score": 2,
+          "note": "The request is clear at the level the supplied context permits; the referent of this part was not supplied and should not be invented."
+        },
+        "argument_quality": {
+          "score": null,
+          "note": "A simple request contains no substantive argument to assess."
+        },
+        "genre_suitability": {
+          "score": 2,
+          "note": "Matches the informal clarity-edit task without unnecessary elaboration."
+        },
+        "edit_restraint": {
+          "score": 2,
+          "note": "Identical to the complete original message; returning it unchanged is expressly allowed."
+        }
+      },
+      "canon_craft_fit": {
+        "score": 2,
+        "note": "Preserves a clear message without imposing canon mannerisms.",
+        "status": "editorial interpretation, not personal voice or author-identity evidence"
+      },
+      "hard_failure_flags": [],
+      "confidence": "moderate; model rubric judgment from supplied packet only"
+    },
+    {
+      "task_id": "syn-informal",
+      "candidate_label": "candidate-2",
+      "dimensions": {
+        "voice_and_canon_similarity": {
+          "score": null,
+          "note": "No genuine personal original A is available for this task; personal voice similarity is unassessed."
+        },
+        "meaning_preservation": {
+          "score": 2,
+          "note": "Exactly preserves the request for one more explanation."
+        },
+        "factual_integrity": {
+          "score": 2,
+          "note": "No factual, referential or interpersonal content is added to the supplied complete original."
+        },
+        "naturalness": {
+          "score": 2,
+          "note": "The original is an ordinary, natural request and remains unchanged."
+        },
+        "clarity": {
+          "score": 2,
+          "note": "The request is clear at the level the supplied context permits; the referent of this part was not supplied and should not be invented."
+        },
+        "argument_quality": {
+          "score": null,
+          "note": "A simple request contains no substantive argument to assess."
+        },
+        "genre_suitability": {
+          "score": 2,
+          "note": "Matches the informal clarity-edit task without unnecessary elaboration."
+        },
+        "edit_restraint": {
+          "score": 2,
+          "note": "Identical to the complete original message; returning it unchanged is expressly allowed."
+        }
+      },
+      "canon_craft_fit": {
+        "score": 2,
+        "note": "Preserves a clear message without imposing canon mannerisms.",
+        "status": "editorial interpretation, not personal voice or author-identity evidence"
+      },
+      "hard_failure_flags": [],
+      "confidence": "moderate; model rubric judgment from supplied packet only"
+    },
+    {
+      "task_id": "syn-informal",
+      "candidate_label": "candidate-3",
+      "dimensions": {
+        "voice_and_canon_similarity": {
+          "score": null,
+          "note": "No genuine personal original A is available for this task; personal voice similarity is unassessed."
+        },
+        "meaning_preservation": {
+          "score": 2,
+          "note": "Exactly preserves the request for one more explanation."
+        },
+        "factual_integrity": {
+          "score": 2,
+          "note": "No factual, referential or interpersonal content is added to the supplied complete original."
+        },
+        "naturalness": {
+          "score": 2,
+          "note": "The original is an ordinary, natural request and remains unchanged."
+        },
+        "clarity": {
+          "score": 2,
+          "note": "The request is clear at the level the supplied context permits; the referent of this part was not supplied and should not be invented."
+        },
+        "argument_quality": {
+          "score": null,
+          "note": "A simple request contains no substantive argument to assess."
+        },
+        "genre_suitability": {
+          "score": 2,
+          "note": "Matches the informal clarity-edit task without unnecessary elaboration."
+        },
+        "edit_restraint": {
+          "score": 2,
+          "note": "Identical to the complete original message; returning it unchanged is expressly allowed."
+        }
+      },
+      "canon_craft_fit": {
+        "score": 2,
+        "note": "Preserves a clear message without imposing canon mannerisms.",
+        "status": "editorial interpretation, not personal voice or author-identity evidence"
+      },
+      "hard_failure_flags": [],
+      "confidence": "moderate; model rubric judgment from supplied packet only"
+    }
+  ],
+  "task_preferences": [
+    {
+      "task_id": "syn-email",
+      "preferred_labels": [
+        "candidate-2",
+        "candidate-3"
+      ],
+      "status": "tie_with_reason",
+      "reason": "Both make one clear request; candidate-1 repeats the request. Candidate-3 adds a useful subject, while candidate-2 retains a slightly fuller courtesy close; neither difference supports a universal winner."
+    },
+    {
+      "task_id": "syn-academic",
+      "preferred_labels": [
+        "candidate-1",
+        "candidate-2",
+        "candidate-3"
+      ],
+      "status": "tie",
+      "reason": "All preserve the same supplied facts, citation and inferential boundary. Different sentence grouping alone does not justify a ranking."
+    },
+    {
+      "task_id": "syn-blog",
+      "preferred_labels": [
+        "candidate-1",
+        "candidate-2",
+        "candidate-3"
+      ],
+      "status": "tie",
+      "reason": "All follow the required teaching sequence and correct arithmetic. Candidate-1 explicitly defines the symbols, which could help a novice, but no audience evidence supports an overall quality preference."
+    },
+    {
+      "task_id": "syn-speaking",
+      "preferred_labels": [
+        "candidate-1",
+        "candidate-2",
+        "candidate-3"
+      ],
+      "status": "tie",
+      "reason": "All accurately orient the listener and preserve the limit on inference. Candidate-3 adds an attention cue, but no delivery or audience evidence establishes that it works better."
+    },
+    {
+      "task_id": "syn-technical",
+      "preferred_labels": [
+        "candidate-1",
+        "candidate-3"
+      ],
+      "status": "tie_with_reason",
+      "reason": "Both document the exact command and supplied behavior without an unsupported execution-status assertion. Inline versus Usage formatting is a venue choice, not a basis for a quality rank."
+    },
+    {
+      "task_id": "syn-linkedin",
+      "preferred_labels": [
+        "candidate-2",
+        "candidate-3"
+      ],
+      "status": "tie_with_reason",
+      "reason": "Both retain that the scenario is constructed; candidate-1 omits that qualifier. The active versus passive retest wording does not justify a further preference."
+    },
+    {
+      "task_id": "syn-informal",
+      "preferred_labels": [
+        "candidate-1",
+        "candidate-2",
+        "candidate-3"
+      ],
+      "status": "exact_text_tie",
+      "reason": "The three outputs are identical to one another and to the supplied complete original."
+    }
+  ],
+  "limitations": [
+    "One model judgment per candidate, no human review or inter-rater reliability estimate.",
+    "The reviewer knows the broad study design from the authorized protocol, but the method-to-label key remained unseen.",
+    "Constructed tasks have no genuine personal voice ground truth.",
+    "The execution-status and fixture-qualification failures are explicit interpretations of the supplied-facts-only rule; a human may disagree and should record that disagreement rather than overwrite this record.",
+    "No aggregate superiority, human-likeness, causal benefit or author-identity conclusion follows from these ratings."
+  ]
+}

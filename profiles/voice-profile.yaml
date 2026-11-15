@@ -1,0 +1,145 @@
+{
+  "approval_policy": "Never replace this profile without showing a diff and receiving explicit user approval.",
+  "created": "2026-11-15",
+  "editing": {
+    "banned_word_authorship_detection": false,
+    "default": "minimal meaning-preserving edits",
+    "detector_evasion": false,
+    "introduce_errors": false,
+    "preserve_user_supplied_dialect": true,
+    "random_burstiness": false
+  },
+  "evidence": {
+    "category_A": {
+      "authorship": "User confirmed short informal prompts are unassisted",
+      "english_metrics_messages": 4,
+      "english_whitespace_words": 189,
+      "profile_messages": 6,
+      "source_groups": 3,
+      "transcription": "2 Hindi-English samples excluded from quantitative English estimates"
+    },
+    "category_P": "See profiles/pre2018-canon-profile.yaml; craft source, never personal cadence",
+    "excluded_ids": [],
+    "quarantined_categories": [
+      "B:editing preferences only",
+      "C:acceptance preferences only",
+      "D:rejection preferences only",
+      "E:no style modeling"
+    ],
+    "split_policy": "Entire source groups kept disjoint; heldout cannot tune this profile"
+  },
+  "identity": {
+    "bilingual_evidence": "Two likely transcribed Hindi-English study prompts; no causal Hindi-transfer inference",
+    "language": "English; preserve clear Indian English expressions supplied by the user",
+    "no_inferred_psychology": true
+  },
+  "personal_patterns": [
+    {
+      "action": "preserve",
+      "confidence": "medium within task prompts; low outside",
+      "evidence_ids": [
+        "A02",
+        "A03",
+        "A04"
+      ],
+      "id": "A-DIRECT",
+      "observation": "Task-oriented openings and concrete requests",
+      "prevalence": {
+        "denominator": 4,
+        "messages": 3
+      },
+      "reproduce": "State the request or finding early; say what the reader should do."
+    },
+    {
+      "action": "preserve",
+      "confidence": "medium for task preference",
+      "evidence_ids": [
+        "A02",
+        "A04"
+      ],
+      "id": "A-COMPLETE",
+      "observation": "Requests connected coverage and sufficient detail",
+      "prevalence": {
+        "denominator": 4,
+        "messages": 2
+      },
+      "reproduce": "Keep the reasoning needed to understand the result; remove repeated filler."
+    },
+    {
+      "action": "strengthen",
+      "confidence": "low as habitual style; explicit integrity requirement is strong",
+      "evidence_ids": [
+        "A01"
+      ],
+      "id": "A-EVIDENCE",
+      "observation": "Asks whether findings support improvement or another explanation",
+      "prevalence": {
+        "denominator": 4,
+        "messages": 1
+      },
+      "reproduce": "Distinguish the measured result from the interpretation and remaining test."
+    },
+    {
+      "action": "strengthen using canon",
+      "confidence": "low as natural prose pattern",
+      "evidence_ids": [
+        "A04"
+      ],
+      "id": "A-INTUITION",
+      "observation": "Asks for an intuitive explanation connected across fields",
+      "prevalence": {
+        "denominator": 4,
+        "messages": 1
+      },
+      "reproduce": "Explain one concrete mechanism before naming the abstraction."
+    },
+    {
+      "action": "preserve if supplied or requested",
+      "confidence": "medium for code-switching presence; low for exact transcription",
+      "evidence_ids": [
+        "A05",
+        "A06"
+      ],
+      "id": "A-LANGUAGE",
+      "observation": "Uses Hindi and English technical terms in spoken-style study messages",
+      "prevalence": {
+        "denominator": 2,
+        "messages": 2,
+        "note": "Selected bilingual subset only; not a population frequency"
+      },
+      "reproduce": "Retain an understandable supplied expression; do not add a dialect marker."
+    }
+  ],
+  "schema_version": 1,
+  "status": "initial_provisional",
+  "uncertain": [
+    "Preferred formal sentence length, passive-voice rate and paragraph rhythm",
+    "Personal email openings, closings and deference conventions",
+    "Natural LinkedIn register and academic long-form syntax",
+    "Whether a fragment, repeated word or spelling reflects typing versus transcription",
+    "Specific Hindi-to-English syntactic transfer"
+  ],
+  "verification": {
+    "automatic_claims": [
+      "surface metrics only"
+    ],
+    "changed_prose": "semantic review required even when exact locks pass",
+    "exact_locks": [
+      "numbers",
+      "dates",
+      "names",
+      "citations",
+      "references",
+      "math",
+      "code",
+      "terms"
+    ],
+    "not_automatically_verified": [
+      "truth",
+      "semantic equivalence",
+      "grammar",
+      "voice authenticity"
+    ]
+  },
+  "version": "0.1.0"
+}

@@ -1,0 +1,5 @@
+# Canonical editable profile: profiles/voice-profile.yaml
+# This routing file avoids two independently editable profiles.
+schema_version: 1
+profile_path: profiles/voice-profile.yaml
+

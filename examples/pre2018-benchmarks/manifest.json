@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-11-15",
+  "purpose": "Meaning-preservation and register evaluation; not authorship detection or author impersonation.",
+  "source_ledger": "research/canon-sources.json",
+  "frozen_profile": "profiles/pre2018-canon-profile.yaml",
+  "split": {
+    "unit": "whole_source_document",
+    "heldout_source_ids": [
+      "orwell-1946-why-i-write-heldout",
+      "kalam-2006-us-india-heldout"
+    ],
+    "analysis_source_overlap": false,
+    "author_overlap": true,
+    "no_heldout_tuning": true,
+    "instructions": "Freeze profile and engine rules before running. Do not tune them against these texts or test feedback. Replace holdouts before a future rule revision.",
+    "limitations": [
+      "The curator necessarily inspected evaluation excerpts.",
+      "Author overlap exists with other works in analysis.",
+      "No claim of exclusion from a model’s historical pretraining.",
+      "Two short excerpts provide bounded checks, not a statistically representative writing benchmark."
+    ]
+  },
+  "copyright": {
+    "full_texts_stored": false,
+    "maximum_verbatim_words_per_webpage": 25,
+    "quote_reuse_elsewhere_in_package": false
+  },
+  "scoring": {
+    "automatic": "Only provenance, hash, word-count and split validation can be automatic. No lexical score establishes writing quality.",
+    "manual_dimensions": [
+      "Meaning preservation",
+      "No invented claims",
+      "Register fit",
+      "Clarity of relation"
+    ],
+    "scale": {
+      "0": "fails the dimension",
+      "1": "partly satisfies; reviewer explains remaining defect",
+      "2": "satisfies for this task"
+    },
+    "hard_failure": "Any unsupported claim, changed uncertainty, changed mechanism or invented experience.",
+    "reporting": "Keep original, revision, reviewer notes and dimension scores. Report failures and do not present a proposed protocol as a completed result."
+  },
+  "benchmarks": [
+    {
+      "id": "B-CANON-01",
+      "source_id": "orwell-1946-why-i-write-heldout",
+      "url": "https://www.orwellfoundation.com/the-orwell-foundation/orwell/essays-and-other-works/why-i-write/",
+      "original_publication": "Summer 1946, Gangrel No. 4",
+      "locator": "Motive (ii), Aesthetic enthusiasm, final sentence",
+      "excerpt": "Desire to share an experience which one feels is valuable and ought not to be missed.",
+      "task": "Turn this fragment into one clear complete sentence for a general reader. Preserve its subjective evaluation; do not add an autobiographical event.",
+      "review_checks": [
+        "The wish to share an experience remains.",
+        "Value remains a person’s judgment, not an established universal fact.",
+        "No invented experience, identity or motivation.",
+        "Complete sentence is readable and preserves the original relation."
+      ],
+      "failure_examples_described": [
+        "Adds a personal story that was not supplied.",
+        "Changes subjective value into an objective claim."
+      ],
+      "split": "heldout",
+      "split_unit": "whole_source_document",
+      "used_for_profile_analysis": false,
+      "used_for_engine_rule_design": false,
+      "no_heldout_tuning": true,
+      "curator_access": "Excerpt and location inspected solely for source verification and evaluation curation.",
+      "authorship_evidence": "Publicly attributed author prose on institution/estate-permitted site; not forensic authorship proof.",
+      "word_count": 16,
+      "sha256_utf8": "e1e350453c7404b869ac0605d4cf26e3a13c4c30e263aaa224910517805a9339",
+      "evaluation_status": "not_run",
+      "human_review_required": true
+    },
+    {
+      "id": "B-CANON-02",
+      "source_id": "kalam-2006-us-india-heldout",
+      "url": "https://presidentofindia.nic.in/dr-apj-abdul-kalam/speeches/address-us-india-summit-education-research-and-technology-university",
+      "original_publication": "31 May 2006, delivered from New Delhi",
+      "locator": "Section I.b, Nano Technology, sentence beginning It is hoped",
+      "excerpt": "It is hoped that such materials could revolutionize electronic design and open the space frontier by radically lowering the cost of launch to orbit.",
+      "task": "Revise this sentence for a formal research briefing. Keep its tentative status and the claimed mechanism. Do not claim an achieved result or introduce a numerical saving.",
+      "review_checks": [
+        "Hope and possibility remain tentative.",
+        "The proposed mechanism is a lower cost of launch to orbit.",
+        "No unsupported quantitative effect or achieved-outcome claim.",
+        "No conversion of historical aspiration into a current fact."
+      ],
+      "failure_examples_described": [
+        "Turns could into will or has.",
+        "Adds a percentage reduction."
+      ],
+      "split": "heldout",
+      "split_unit": "whole_source_document",
+      "used_for_profile_analysis": false,
+      "used_for_engine_rule_design": false,
+      "no_heldout_tuning": true,
+      "curator_access": "Excerpt and location inspected solely for source verification and evaluation curation.",
+      "authorship_evidence": "Publicly attributed author prose on institution/estate-permitted site; not forensic authorship proof.",
+      "word_count": 24,
+      "sha256_utf8": "d4f07ee32a00d291449a26f2cf3b874979540dfa68d94aadcaa47bed94b09de2",
+      "evaluation_status": "not_run",
+      "human_review_required": true
+    }
+  ]
+}

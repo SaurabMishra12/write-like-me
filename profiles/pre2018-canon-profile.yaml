@@ -1,0 +1,312 @@
+{
+  "schema_version": 1,
+  "profile_id": "pre2018-canon",
+  "status": "bounded_source_backed_craft_profile_not_efficacy_validated",
+  "created_at": "2026-11-15",
+  "cutoff_exclusive": "2018-01-01",
+  "purpose": "Transfer explanatory craft while preserving the user’s voice, claims and intended register; do not impersonate an author.",
+  "provenance": {
+    "study": "research/pre2018-canon-study.md",
+    "source_ledger": "research/canon-sources.json",
+    "benchmark_manifest": "examples/pre2018-benchmarks/manifest.json",
+    "evidence_type": "qualitative selected-passage close reading",
+    "whole_book_reading_claim": false,
+    "human_authorship_verified_by_date": false,
+    "reader_benefit_measured": false,
+    "audio_delivery_assessed": false
+  },
+  "priority": [
+    "Factual, mathematical and evidential fidelity",
+    "User instructions and authorized personal voice",
+    "Audience, purpose and genre",
+    "Optional canon craft suggestions"
+  ],
+  "meaning_invariants": [
+    "Assumptions and quantifiers",
+    "Numbers, units, dates and identifiers",
+    "Citations and attribution",
+    "Uncertainty and causal status",
+    "Negative findings and contradictory evidence",
+    "Definitions and technical meaning"
+  ],
+  "principles": [
+    {
+      "id": "C-S1",
+      "level": "sentence",
+      "suggestion": "Name the actor, object and consequential action when they are known.",
+      "review_question": "Can a reader recover who does what, or is the omission intentional?",
+      "evidence_source_ids": [
+        "orwell-1946-politics",
+        "zinsser-2009-esl"
+      ],
+      "confidence": "high",
+      "applies_when": "Use when it improves the intended reader’s understanding without changing meaning.",
+      "enforcement": "judgment_required; not an automatic prohibition"
+    },
+    {
+      "id": "C-S2",
+      "level": "sentence",
+      "suggestion": "Use necessary technical terms consistently and explain them near first consequential use.",
+      "review_question": "Is specialist vocabulary doing precise work for this audience?",
+      "evidence_source_ids": [
+        "shannon-1948-communication",
+        "olah-2015-lstm"
+      ],
+      "confidence": "high",
+      "applies_when": "Use when it improves the intended reader’s understanding without changing meaning.",
+      "enforcement": "judgment_required; not an automatic prohibition"
+    },
+    {
+      "id": "C-S3",
+      "level": "sentence",
+      "suggestion": "Let sentence length follow the reasoning and emphasis.",
+      "review_question": "Does a split preserve the relation between conditions and the claim?",
+      "evidence_source_ids": [
+        "feynman-1963-atoms",
+        "sagan-1994-pale-blue-dot"
+      ],
+      "confidence": "moderate",
+      "applies_when": "Use when it improves the intended reader’s understanding without changing meaning.",
+      "enforcement": "judgment_required; not an automatic prohibition"
+    },
+    {
+      "id": "C-P1",
+      "level": "paragraph",
+      "suggestion": "Give each paragraph a recoverable job and an intelligible progression.",
+      "review_question": "What changes in the reader’s understanding by the end?",
+      "evidence_source_ids": [
+        "shannon-1948-communication",
+        "karpathy-2016-backprop"
+      ],
+      "confidence": "moderate",
+      "applies_when": "Use when it improves the intended reader’s understanding without changing meaning.",
+      "enforcement": "judgment_required; not an automatic prohibition"
+    },
+    {
+      "id": "C-P2",
+      "level": "paragraph",
+      "suggestion": "Use a small example to make a mechanism inspectable before enlarging the case.",
+      "review_question": "Can the reader connect the example’s parts to the general mechanism?",
+      "evidence_source_ids": [
+        "feynman-1963-atoms",
+        "karpathy-2015-rnn",
+        "olah-2015-lstm"
+      ],
+      "confidence": "high",
+      "applies_when": "Use when it improves the intended reader’s understanding without changing meaning.",
+      "enforcement": "judgment_required; not an automatic prohibition"
+    },
+    {
+      "id": "C-P3",
+      "level": "paragraph",
+      "suggestion": "State the connection between an example and the point it supports.",
+      "review_question": "Is the example evidence, intuition, illustration, or merely decoration?",
+      "evidence_source_ids": [
+        "feynman-1974-cargo",
+        "karpathy-2016-backprop"
+      ],
+      "confidence": "moderate",
+      "applies_when": "Use when it improves the intended reader’s understanding without changing meaning.",
+      "enforcement": "judgment_required; not an automatic prohibition"
+    },
+    {
+      "id": "C-R1",
+      "level": "reasoning",
+      "suggestion": "Set the problem and scope before developing formal machinery.",
+      "review_question": "What is being answered, for whom, and under which conditions?",
+      "evidence_source_ids": [
+        "shannon-1948-communication",
+        "booth-colomb-williams-third-ed-interview"
+      ],
+      "confidence": "high",
+      "applies_when": "Use when it improves the intended reader’s understanding without changing meaning.",
+      "enforcement": "judgment_required; not an automatic prohibition"
+    },
+    {
+      "id": "C-R2",
+      "level": "reasoning",
+      "suggestion": "Preserve counterevidence, alternative explanations and limiting conditions.",
+      "review_question": "What could invalidate this inference or change its implication?",
+      "evidence_source_ids": [
+        "feynman-1974-cargo",
+        "booth-colomb-williams-third-ed-interview"
+      ],
+      "confidence": "high",
+      "applies_when": "Use when it improves the intended reader’s understanding without changing meaning.",
+      "enforcement": "judgment_required; not an automatic prohibition"
+    },
+    {
+      "id": "C-R3",
+      "level": "reasoning",
+      "suggestion": "Make the practical reason for understanding an abstraction visible through a relevant failure or task.",
+      "review_question": "Why does this detail matter to this reader’s task?",
+      "evidence_source_ids": [
+        "karpathy-2016-backprop",
+        "hamming-1986-research"
+      ],
+      "confidence": "high",
+      "applies_when": "Use when it improves the intended reader’s understanding without changing meaning.",
+      "enforcement": "judgment_required; not an automatic prohibition"
+    },
+    {
+      "id": "C-R4",
+      "level": "reasoning",
+      "suggestion": "Distinguish a model or analogy from the phenomenon it helps explain.",
+      "review_question": "What does the correspondence preserve, and where does it stop?",
+      "evidence_source_ids": [
+        "feynman-1963-atoms",
+        "olah-2015-lstm"
+      ],
+      "confidence": "high",
+      "applies_when": "Use when it improves the intended reader’s understanding without changing meaning.",
+      "enforcement": "judgment_required; not an automatic prohibition"
+    },
+    {
+      "id": "C-R5",
+      "level": "reasoning",
+      "suggestion": "Expose the reader’s reason to care and basis for trusting the argument.",
+      "review_question": "Are significance and support stated without overstating either?",
+      "evidence_source_ids": [
+        "booth-colomb-williams-third-ed-interview",
+        "hamming-1986-research"
+      ],
+      "confidence": "high",
+      "applies_when": "Use when it improves the intended reader’s understanding without changing meaning.",
+      "enforcement": "judgment_required; not an automatic prohibition"
+    },
+    {
+      "id": "C-V1",
+      "level": "spoken_register",
+      "suggestion": "Use direct address, signposting and selective repetition when a listener needs orientation.",
+      "review_question": "Does each return to the central phrase help the audience follow the turn?",
+      "evidence_source_ids": [
+        "kalam-2003-students",
+        "kalam-2007-red-fort",
+        "hamming-1986-research"
+      ],
+      "confidence": "moderate",
+      "applies_when": "Spoken teaching or a public address; do not copy into formal prose by default.",
+      "enforcement": "judgment_required; not an automatic prohibition"
+    },
+    {
+      "id": "C-V2",
+      "level": "spoken_register",
+      "suggestion": "Supply warmth through a relevant question, useful example or authorized experience.",
+      "review_question": "Is the personal detail real, supplied, and relevant?",
+      "evidence_source_ids": [
+        "zinsser-2009-revisions",
+        "feynman-1963-atoms"
+      ],
+      "confidence": "moderate",
+      "applies_when": "Use when it improves the intended reader’s understanding without changing meaning.",
+      "enforcement": "judgment_required; not an automatic prohibition"
+    },
+    {
+      "id": "C-V3",
+      "level": "spoken_register",
+      "suggestion": "Treat informal discussion, a prepared talk and a technical paper as different tasks.",
+      "review_question": "Does the register help this venue and audience?",
+      "evidence_source_ids": [
+        "hamming-1986-research",
+        "shannon-1948-communication"
+      ],
+      "confidence": "moderate",
+      "applies_when": "Use when it improves the intended reader’s understanding without changing meaning.",
+      "enforcement": "judgment_required; not an automatic prohibition"
+    },
+    {
+      "id": "C-E1",
+      "level": "revision",
+      "suggestion": "Seek evidence of reader understanding and revisit unfamiliar drafts.",
+      "review_question": "Can a representative reader state the claim and reconstruct the reasoning?",
+      "evidence_source_ids": [
+        "pinker-2014-bad-writing"
+      ],
+      "confidence": "high",
+      "applies_when": "Use when it improves the intended reader’s understanding without changing meaning.",
+      "enforcement": "judgment_required; not an automatic prohibition"
+    }
+  ],
+  "registers": {
+    "technical_paper": {
+      "prefer": [
+        "Explicit scope and definitions",
+        "Linked reasoning and evidence",
+        "Precise specialist terms"
+      ],
+      "allow": [
+        "Passive voice when agent is unknown or the process is the focus",
+        "Long sentences whose conditions remain clear",
+        "Formal notation with explained meaning"
+      ]
+    },
+    "technical_teaching": {
+      "prefer": [
+        "Small examples",
+        "Mechanism in ordinary language alongside notation",
+        "Real reader objections"
+      ],
+      "allow": [
+        "Direct address",
+        "Brief asides with a teaching purpose"
+      ]
+    },
+    "spoken_address": {
+      "prefer": [
+        "Audible signposts",
+        "One recoverable central thread",
+        "Repetition that aids orientation"
+      ],
+      "allow": [
+        "Aspirational language clearly marked as aspiration",
+        "Supplied true personal experience"
+      ]
+    },
+    "reflective_prose": {
+      "prefer": [
+        "Observed detail",
+        "An explicit stake",
+        "A voice grounded in authorized experience"
+      ],
+      "allow": [
+        "Subjective judgments marked as judgments",
+        "Varied cadence"
+      ]
+    }
+  },
+  "non_rules": [
+    "No universal sentence-length target or burstiness score",
+    "No ban on all passive voice, abstraction, repetition, jargon or long words",
+    "No punctuation quota",
+    "No required enthusiasm, anecdote or rhetorical question",
+    "No fake typos, invented experience, manufactured hesitation or detector optimization",
+    "No date-only human-versus-machine classification"
+  ],
+  "excluded_source_ids": [
+    "zinsser-1976-book-metadata",
+    "pinker-2014-book-metadata",
+    "craft-book-edition-metadata",
+    "shannon-1952-creative-bibliography",
+    "shannon-1952-creative-transcription",
+    "nielsen-ch1-unavailable",
+    "tao-current-writing-page",
+    "orwell-1946-why-i-write-heldout",
+    "kalam-2006-us-india-heldout"
+  ],
+  "holdout_policy": {
+    "split_unit": "whole source document",
+    "heldout_source_ids": [
+      "orwell-1946-why-i-write-heldout",
+      "kalam-2006-us-india-heldout"
+    ],
+    "no_heldout_tuning": true,
+    "rule": "Do not use heldout text, reviewer findings or generated test outcomes to adjust this profile or engine rules. New revisions require a newly frozen holdout set.",
+    "limitation": "Local separation only; historical pretraining exposure is unknown."
+  },
+  "confidence_limitations": [
+    "Selected passages do not establish an author-wide statistical style.",
+    "Provenance confidence is separate from factual correctness and reader benefit.",
+    "Advice from a speech may not transfer to a research paper.",
+    "Canon is narrow and historically selected, not representative of all good writing."
+  ]
+}

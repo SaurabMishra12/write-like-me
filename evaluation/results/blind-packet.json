@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "seed": 17,
+  "tasks": [
+    {
+      "task_id": "syn-email",
+      "genre": "email",
+      "request": "Draft a concise professor outreach email using only the facts. No claim to have read a paper.",
+      "facts": "The sender is a student working on a toy graph-search project. A professor studies search algorithms. The sender has read the professor's abstract, not the full paper. Ask whether a short project discussion would be possible. No names, achievements or personal connection are supplied.",
+      "candidates": [
+        {
+          "label": "candidate-1",
+          "text": "Dear Professor,\n\nI am a student working on a toy graph-search project. I read the abstract of your work on search algorithms and would appreciate the opportunity to discuss my project briefly. Would you be available for a short discussion?\n\nThank you for your time.\n\nBest regards,\n[Your name]"
+        },
+        {
+          "label": "candidate-2",
+          "text": "Dear Professor,\n\nI am a student working on a toy graph-search project. After reading the abstract of your work on search algorithms, I wanted to ask whether you would be open to a short discussion about my project.\n\nThank you for your time.\n\nBest regards,\n[Your name]"
+        },
+        {
+          "label": "candidate-3",
+          "text": "Subject: Short discussion about a graph-search project\n\nDear Professor,\n\nI am a student working on a toy graph-search project. I have read the abstract of your work on search algorithms. Would a short discussion about my project be possible?\n\nRegards,\n[Your name]"
+        }
+      ]
+    },
+    {
+      "task_id": "syn-academic",
+      "genre": "academic",
+      "request": "Write a short results paragraph using only the supplied toy experiment facts; distinguish observation from interpretation.",
+      "facts": "These are constructed test facts, not real research: method A uses 12 messages and method B uses 20 messages. Both achieve 80% accuracy on 50 examples. This does not establish an accuracy improvement. Preserve the citation marker \\cite{fixture2026} exactly; it is a test key, not a real paper.",
+      "candidates": [
+        {
+          "label": "candidate-1",
+          "text": "In this constructed toy experiment, method A used 12 messages compared with 20 for method B, while both achieved 80% accuracy on 50 examples \\cite{fixture2026}. The observation is a lower message count for A at the same measured accuracy; it does not establish an accuracy improvement."
+        },
+        {
+          "label": "candidate-2",
+          "text": "In this constructed test, method A uses 12 messages and method B uses 20 messages, while both achieve 80% accuracy on 50 examples \\cite{fixture2026}. Method A therefore uses fewer messages in this example, but these results do not establish an accuracy improvement."
+        },
+        {
+          "label": "candidate-3",
+          "text": "In this constructed toy experiment, method A used 12 messages and method B used 20. Both achieved 80% accuracy on 50 examples \\cite{fixture2026}. A therefore used fewer messages at the same measured accuracy in this example, but these results do not establish an accuracy improvement."
+        }
+      ]
+    },
+    {
+      "task_id": "syn-blog",
+      "genre": "blog",
+      "request": "Explain a scalar moving average using intuition, one concrete step, then the equation. Do not invent personal experience.",
+      "facts": "Toy recurrence: $s_t = 0.8s_{t-1} + 0.2x_t$. With previous state 10 and input 20, the updated state is 12. The state keeps part of the past value and part of the new value. This is an illustration, not a measured experiment.",
+      "candidates": [
+        {
+          "label": "candidate-1",
+          "text": "A moving average lets the state adjust to a new input while keeping part of its previous value. If the previous state is 10 and the new input is 20, keep 80% of the old state and add 20% of the input: 0.8 × 10 + 0.2 × 20 = 12.\n\nThis update follows $s_t = 0.8s_{t-1} + 0.2x_t$, where $s_t$ is the updated state, $s_{t-1}$ is the previous state and $x_t$ is the new input. This is a toy illustration, not a measured experiment."
+        },
+        {
+          "label": "candidate-2",
+          "text": "A moving average smooths incoming values by combining the previous state with the latest input. Here, each update retains 80% of the previous state and adds 20% of the new input.\n\nFor example, if the previous state is 10 and the new input is 20, the update is 0.8 × 10 + 0.2 × 20 = 12.\n\nThe recurrence is $s_t = 0.8s_{t-1} + 0.2x_t$. This is a numerical illustration, not a measured experiment."
+        },
+        {
+          "label": "candidate-3",
+          "text": "Think of the state as a running value that changes gradually as new inputs arrive. It keeps 80% of its previous value and takes 20% of the new input.\n\nStarting from 10 with a new input of 20 gives 0.8 × 10 + 0.2 × 20 = 12.\n\nThe update rule is $s_t = 0.8s_{t-1} + 0.2x_t$. This illustrates the calculation; it is not a measured experiment."
+        }
+      ]
+    },
+    {
+      "task_id": "syn-speaking",
+      "genre": "speaking",
+      "request": "Write short speaking notes for the actual described figure. No added causal interpretation.",
+      "facts": "The slide has two bars. The left bar is labelled Baseline at 60%. The right bar is labelled Variant at 60%. Their heights are equal. This figure shows equal measured accuracy in this example; it does not show a gain or a causal effect.",
+      "candidates": [
+        {
+          "label": "candidate-1",
+          "text": "The left bar, Baseline, shows 60% accuracy. The right bar, Variant, also shows 60%. The bars are equal in height, so this example shows equal measured accuracy. It does not show an accuracy gain or establish a causal effect."
+        },
+        {
+          "label": "candidate-2",
+          "text": "On the left, Baseline is at 60%. On the right, Variant is also at 60%. The bars are the same height, showing equal measured accuracy in this example. The figure shows no gain and does not establish a causal effect."
+        },
+        {
+          "label": "candidate-3",
+          "text": "Look at the two bars. Baseline is on the left at 60%, and Variant is on the right at 60%. Their heights are equal.\n\nThe figure shows equal measured accuracy in this example. It does not show a gain or a causal effect."
+        }
+      ]
+    },
+    {
+      "task_id": "syn-technical",
+      "genre": "technical",
+      "request": "Write useful documentation for this command, preserving executable text exactly.",
+      "facts": "The command is `python solve.py --seed 7 --limit 50`. It reads a local file and writes a JSON summary. An empty input returns an error. No speed, compatibility or success claim is provided. Do not claim the command was run.",
+      "candidates": [
+        {
+          "label": "candidate-1",
+          "text": "Use `python solve.py --seed 7 --limit 50` to read a local file and write a JSON summary. Empty input returns an error."
+        },
+        {
+          "label": "candidate-2",
+          "text": "Use `python solve.py --seed 7 --limit 50` to read a local file and write a JSON summary. An empty input returns an error.\n\nThis command has not been run for this documentation."
+        },
+        {
+          "label": "candidate-3",
+          "text": "Usage: `python solve.py --seed 7 --limit 50`\n\nReads a local file and writes a JSON summary. An empty input returns an error."
+        }
+      ]
+    },
+    {
+      "task_id": "syn-linkedin",
+      "genre": "general",
+      "request": "Write a short professional post grounded in the facts. No invented emotions, achievements or significance.",
+      "facts": "In this constructed scenario, the writer helped test a prototype. The test found a parsing error. The team corrected it and plans another test. No deployment, customer, accuracy or leadership claim is supported.",
+      "candidates": [
+        {
+          "label": "candidate-1",
+          "text": "I helped test a prototype. The test found a parsing error, which the team corrected. The team plans another test."
+        },
+        {
+          "label": "candidate-2",
+          "text": "In this constructed scenario, I helped test a prototype and we found a parsing error. The team corrected it and plans to test again."
+        },
+        {
+          "label": "candidate-3",
+          "text": "I helped test a prototype in this constructed scenario. The test revealed a parsing error, and the team corrected it. A further test is planned."
+        }
+      ]
+    },
+    {
+      "task_id": "syn-informal",
+      "genre": "general",
+      "request": "Make the smallest useful clarity edit. Returning unchanged text is allowed.",
+      "facts": "The complete original message is: Please explain this part once more. No further context is supplied.",
+      "candidates": [
+        {
+          "label": "candidate-1",
+          "text": "Please explain this part once more."
+        },
+        {
+          "label": "candidate-2",
+          "text": "Please explain this part once more."
+        },
+        {
+          "label": "candidate-3",
+          "text": "Please explain this part once more."
+        }
+      ]
+    }
+  ],
+  "instructions": "Judge independently before opening the key. Use null when a dimension lacks evidence; do not infer personal voice from synthetic facts."
+}
